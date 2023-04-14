@@ -7,10 +7,16 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     public float speed;
     public float dragConstant;
+    private float maxHeat = 69420;
+    private float currentHeat;
+    public float decayRate;
+    public GameObject heatBar;
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        currentHeat = maxHeat;
     }
 
     // Update is called once per frame
@@ -35,6 +41,13 @@ public class PlayerScript : MonoBehaviour
 
         }
 
+        if(currentHeat > 0)
+        {
+            currentHeat -= decayRate * Time.deltaTime;
+        }
+        Debug.Log(currentHeat);
+
+        heatBar.gameObject.transform.localScale = new Vector3(currentHeat/maxHeat, heatBar.gameObject.transform.localScale.y, heatBar.gameObject.transform.localScale.z);
 
         rb.velocity = rb.velocity * dragConstant;
 
