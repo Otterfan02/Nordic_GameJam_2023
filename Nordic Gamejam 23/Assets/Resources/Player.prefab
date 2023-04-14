@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7908877644098621075}
   - component: {fileID: 8878833038456011687}
+  - component: {fileID: 6943692034615545658}
+  - component: {fileID: 9221523111977080189}
+  - component: {fileID: 8070893104963903107}
   - component: {fileID: 6907771036384487958}
   m_Layer: 0
   m_Name: Player
@@ -85,6 +88,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6943692034615545658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878746057065597520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cfda9d6d406c154c9a46e5c0cc1a6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1000
+  dragConstant: 0.98
+--- !u!50 &9221523111977080189
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878746057065597520}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &8070893104963903107
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878746057065597520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &6907771036384487958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +190,12 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 8878833038456011687}
       lodStepsActive: 1
+    - component: {fileID: 6943692034615545658}
+      lodStepsActive: 1
+    - component: {fileID: 9221523111977080189}
+      lodStepsActive: 1
+    - component: {fileID: 8070893104963903107}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player_a26d02a2f63fd174f8b2dce76dc412a9
@@ -169,7 +229,8 @@ MonoBehaviour:
   selectedSynchronizedPrefabOption: 2
   usingReflection: 1
   coherenceTag: 
-  componentActions: []
+  componentActions:
+  - rid: 4120924835208232962
   references:
     version: 2
     RefIds:
@@ -221,3 +282,7 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
+    - rid: 4120924835208232962
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 6943692034615545658}
