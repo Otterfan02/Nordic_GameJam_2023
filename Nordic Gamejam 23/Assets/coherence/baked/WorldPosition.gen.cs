@@ -79,18 +79,6 @@ namespace Coherence.Generated
 			}
 			return (val, mask, null);
 		}
-		public static (WorldPosition, uint, uint?) DeserializeArchetypeCanvas_f09cd457a34a6d74f80cf453e6b14ded_WorldPosition_LOD0(InProtocolBitStream bitStream)
-		{
-			var mask = (uint)0;
-			var val = new WorldPosition();
-			if (bitStream.ReadMask())
-			{
-				val.value = (bitStream.ReadVector3(FloatMeta.NoCompression())).ToUnityVector3();
-				mask |= 0b00000000000000000000000000000001;
-			}
-
-			return (val, mask, 0);
-		}
 		public static (WorldPosition, uint, uint?) DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0(InProtocolBitStream bitStream)
 		{
 			var mask = (uint)0;
