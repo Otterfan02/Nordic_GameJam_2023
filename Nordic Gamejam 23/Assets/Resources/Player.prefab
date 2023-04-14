@@ -341,8 +341,8 @@ MonoBehaviour:
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 0
-  coherenceUUID: 
+  uniquenessType: 1
+  coherenceUUID: poi
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []
