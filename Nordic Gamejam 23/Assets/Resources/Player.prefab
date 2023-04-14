@@ -364,7 +364,7 @@ MonoBehaviour:
   remoteVersionPrefabName: Player
   PrefabGuid: a26d02a2f63fd174f8b2dce76dc412a9
   selectedSynchronizedPrefabOption: 2
-  usingReflection: 1
+  usingReflection: 0
   coherenceTag: 
   componentActions:
   - rid: 4120924835208232962

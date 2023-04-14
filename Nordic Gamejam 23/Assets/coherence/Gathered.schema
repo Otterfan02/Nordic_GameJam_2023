@@ -1,5 +1,17 @@
+component Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189
+  velocity Vector2 [compression "None"]
+  gravityScale Float [compression "None"]
+
+component Player_id0_UnityEngine__char_46_Transform_7700443003500183079
+  localScale Vector3 [compression "None"]
+
 archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
   lod 0
     WorldPosition 
+      value [compression "None"]
+    Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189 
+      value [compression "None"]
+      number [compression "None"]
+    Player_id0_UnityEngine__char_46_Transform_7700443003500183079 
       value [compression "None"]
 
