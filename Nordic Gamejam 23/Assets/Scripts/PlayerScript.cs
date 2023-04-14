@@ -1,3 +1,4 @@
+using Coherence.Toolkit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,10 @@ public class PlayerScript : MonoBehaviour
     public float decayRate;
     public GameObject heatBar;
     private bool isConnected;
-    
+    private CoherenceMonoBridge bridge;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,19 +48,33 @@ public class PlayerScript : MonoBehaviour
         }
 
         
-        if(currentHeat > 0)
+        if(currentHeat > 0 && CheckConnected())
         {
             currentHeat -= decayRate * Time.deltaTime;
         }
         Debug.Log(currentHeat);
 
+        if (!CheckConnected())
+        {
+            currentHeat = maxHeat;
+        }
         
 
         heatBar.gameObject.transform.localScale = new Vector3(currentHeat/maxHeat, heatBar.gameObject.transform.localScale.y, heatBar.gameObject.transform.localScale.z);
 
         rb.velocity = rb.velocity * dragConstant;
 
+
+    bool CheckConnected()
+    {
+        if (!MonoBridgeStore.TryGetBridge(gameObject.scene, out bridge))
+        {
+            return false;
+        }
+        return bridge.isConnected;
     }
+}
+
 
 
 }
