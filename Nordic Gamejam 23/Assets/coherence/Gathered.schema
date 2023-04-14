@@ -15,3 +15,8 @@ archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
     Player_id0_UnityEngine__char_46_Transform_7700443003500183079 
       value [compression "None"]
 
+archetype Skeleton_1a31f1e946b732a47aba5db2fad6053d
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+
