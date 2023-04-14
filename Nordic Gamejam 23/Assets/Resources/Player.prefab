@@ -224,6 +224,7 @@ MonoBehaviour:
   dragConstant: 0.98
   decayRate: 1000
   heatBar: {fileID: 6071859617503458554}
+  scoreText: {fileID: 0}
 --- !u!50 &9221523111977080189
 Rigidbody2D:
   serializedVersion: 4
@@ -341,7 +342,7 @@ MonoBehaviour:
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 1
+  uniquenessType: 0
   coherenceUUID: poi
   destructionBehavior: 0
   preserveChildren: 0
