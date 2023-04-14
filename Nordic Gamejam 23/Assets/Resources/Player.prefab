@@ -368,6 +368,7 @@ MonoBehaviour:
   coherenceTag: 
   componentActions:
   - rid: 4120924835208232962
+  - rid: 4120924835208232969
   references:
     version: 2
     RefIds:
@@ -561,6 +562,10 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
+    - rid: 4120924835208232969
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 8137531145103868463}
 --- !u!1 &6071859617503458554
 GameObject:
   m_ObjectHideFlags: 0
