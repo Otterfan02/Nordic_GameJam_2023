@@ -5,6 +5,11 @@ component Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189
 component Player_id0_UnityEngine__char_46_Transform_7700443003500183079
   localScale Vector3 [compression "None"]
 
+archetype Canvas_f09cd457a34a6d74f80cf453e6b14ded
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+
 archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
   lod 0
     WorldPosition 
