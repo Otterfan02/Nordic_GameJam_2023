@@ -101,9 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cfda9d6d406c154c9a46e5c0cc1a6b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 2000
   dragConstant: 0.98
-  decayRate: 10000
+  decayRate: 1000
   heatBar: {fileID: 6071859617503458554}
 --- !u!50 &9221523111977080189
 Rigidbody2D:
