@@ -112,8 +112,16 @@ public class PlayerScript : MonoBehaviour
         }
         return bridge.isConnected;
     }
-}
 
+        
+}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "Needle")
+        {
+            currentHeat = -1;
+        }
+    }
 
 
 }
