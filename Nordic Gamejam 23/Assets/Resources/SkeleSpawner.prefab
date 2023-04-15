@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Skeleton: {fileID: 1058159928911777360, guid: 1a31f1e946b732a47aba5db2fad6053d, type: 3}
-  spawnDelay: 2
+  maxSkeletonSpawn: 20
+  spawnDelay: 0
 --- !u!114 &-1707299195414388638
 MonoBehaviour:
   m_ObjectHideFlags: 0

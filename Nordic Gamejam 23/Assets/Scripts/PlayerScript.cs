@@ -105,7 +105,7 @@ public class PlayerScript : MonoBehaviour
         //Debug.Log(NetworkDialog.PlayerName);
 
 
-
+        if (currentHeat > maxHeat) currentHeat = maxHeat;
         heatBar.gameObject.transform.localScale = new Vector3(currentHeat/maxHeat, heatBar.gameObject.transform.localScale.y, heatBar.gameObject.transform.localScale.z);
 
         rb.velocity = rb.velocity * dragConstant;
