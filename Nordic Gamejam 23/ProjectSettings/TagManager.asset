@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Syringe
   - Food
+  - Projectile
   layers:
   - Default
   - TransparentFX

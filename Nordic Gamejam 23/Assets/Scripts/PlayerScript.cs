@@ -134,6 +134,11 @@ public class PlayerScript : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        if (collision.CompareTag("Projectile"))
+        {
+            currentHeat -= 10000;
+            Destroy(collision.gameObject);
+        }
     }
 
 
