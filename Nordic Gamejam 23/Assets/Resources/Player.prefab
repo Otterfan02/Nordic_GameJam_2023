@@ -224,6 +224,7 @@ MonoBehaviour:
   - rid: 4120924835208232967
   - rid: 4120924835208233042
   - rid: 4120924835208233044
+  - rid: 4120924835208233085
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -240,7 +241,6 @@ MonoBehaviour:
   coherenceTag: 
   componentActions:
   - rid: 4120924835208232962
-  - rid: 4120924835208232969
   references:
     version: 2
     RefIds:
@@ -434,10 +434,6 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 4120924835208232969
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 0}
     - rid: 4120924835208233042
       type: {class: FloatBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
       data:
@@ -527,6 +523,52 @@ MonoBehaviour:
           rid: -2
         bindingType:
           assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.FloatBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 4120924835208233085
+      type: {class: RotationBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 4120924835208233086
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 2123fbd0-5434-4d95-abe7-36d4b8f3c48c
+        archetypeData:
+          type: 8
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 8
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.00000008381903171539307
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 7908877644098621075}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 4120924835208233086
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: rotation
+        monoAssemblyType: UnityEngine.Quaternion, UnityEngine
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 64
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.RotationBinding,
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
