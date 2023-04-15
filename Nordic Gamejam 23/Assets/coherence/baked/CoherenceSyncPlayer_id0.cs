@@ -121,6 +121,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_61787648_295c_40f5_9501_0b020b158aa3 : StringBinding
+	{
+		private PlayerScript CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (PlayerScript)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override string Value
+		{
+			get => (string)(System.String)(CastedUnityComponent.currentName);
+			set => CastedUnityComponent.currentName = (System.String)(value);
+		}
+
+		protected override string ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
+			return update.currentName;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
+			update.currentName = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_PlayerScript_6943692034615545658();
+		}
+	}
+
 	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_06f05b60_8a05_407a_b5bf_bd53eda51408 : StringBinding
 	{
 		private TMPro.TextMeshPro CastedUnityComponent;		
@@ -329,6 +366,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (PlayerScript).score");
+			}
+			if (coherenceSync.TryGetBindingByGuid("61787648-295c-40f5-9501-0b020b158aa3", "currentName", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentName))
+			{
+				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_61787648_295c_40f5_9501_0b020b158aa3();
+				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentName.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentName)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (PlayerScript).currentName");
 			}
 			if (coherenceSync.TryGetBindingByGuid("06f05b60-8a05-407a-b5bf-bd53eda51408", "text", out Binding InternalPlayer_id0_TMPro__char_46_TextMeshPro_8736711127938106637_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_text))
 			{

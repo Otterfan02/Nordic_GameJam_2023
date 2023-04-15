@@ -3,6 +3,7 @@ component ClientConnection_Client_8466908635430828435
 
 component Player_id0_PlayerScript_6943692034615545658
   score Float [compression "None"]
+  currentName String [bits "6"]
 
 component Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637
   text String [bits "6"]
@@ -62,6 +63,7 @@ archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
       value [bits "32"]
     Player_id0_PlayerScript_6943692034615545658 
       number [compression "None"]
+      name [bits "6"]
     Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189 
       value [compression "None"]
       number [compression "None"]

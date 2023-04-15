@@ -18,10 +18,11 @@ namespace Coherence.Generated
 	public struct Player_id0_PlayerScript_6943692034615545658 : ICoherenceComponentData
 	{
 		public float score;
+		public string currentName;
 
 		public override string ToString()
 		{
-			return $"Player_id0_PlayerScript_6943692034615545658(score: {score})";
+			return $"Player_id0_PlayerScript_6943692034615545658(score: {score}, currentName: {currentName})";
 		}
 
 		public uint GetComponentType() => Definition.InternalPlayer_id0_PlayerScript_6943692034615545658;
@@ -49,6 +50,12 @@ namespace Coherence.Generated
 				score = other.score;
 			}
 			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				currentName = other.currentName;
+			}
+			mask >>= 1;
 			return this;
 		}
 
@@ -65,6 +72,11 @@ namespace Coherence.Generated
 				bitStream.WriteFloat(data.score, FloatMeta.NoCompression());
 			}
 			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteShortString(data.currentName);
+			}
+			mask >>= 1;
 		}
 
 		public static (Player_id0_PlayerScript_6943692034615545658, uint, uint?) Deserialize(InProtocolBitStream bitStream)
@@ -77,6 +89,11 @@ namespace Coherence.Generated
 				val.score = bitStream.ReadFloat(FloatMeta.NoCompression());
 				mask |= 0b00000000000000000000000000000001;
 			}
+			if (bitStream.ReadMask())
+			{
+				val.currentName = bitStream.ReadShortString();
+				mask |= 0b00000000000000000000000000000010;
+			}
 			return (val, mask, null);
 		}
 		public static (Player_id0_PlayerScript_6943692034615545658, uint, uint?) DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0(InProtocolBitStream bitStream)
@@ -87,6 +104,11 @@ namespace Coherence.Generated
 			{
 				val.score = bitStream.ReadFloat(FloatMeta.NoCompression());
 				mask |= 0b00000000000000000000000000000001;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.currentName = bitStream.ReadShortString();
+				mask |= 0b00000000000000000000000000000010;
 			}
 
 			return (val, mask, 0);
