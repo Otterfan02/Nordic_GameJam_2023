@@ -18,19 +18,10 @@ namespace Coherence.Generated
 	public struct Player_id0_PlayerScript_6943692034615545658 : ICoherenceComponentData
 	{
 		public float score;
-		public float currentHeat;
-		public float speed;
-		public float dragConstant;
-		public float rotationSpeed;
-		public float currentRotation;
-		public float decayRate;
-		public SerializeEntityID heatBar;
-		public string currentName;
-		public bool enabled;
 
 		public override string ToString()
 		{
-			return $"Player_id0_PlayerScript_6943692034615545658(score: {score}, currentHeat: {currentHeat}, speed: {speed}, dragConstant: {dragConstant}, rotationSpeed: {rotationSpeed}, currentRotation: {currentRotation}, decayRate: {decayRate}, heatBar: {heatBar}, currentName: {currentName}, enabled: {enabled})";
+			return $"Player_id0_PlayerScript_6943692034615545658(score: {score})";
 		}
 
 		public uint GetComponentType() => Definition.InternalPlayer_id0_PlayerScript_6943692034615545658;
@@ -58,60 +49,6 @@ namespace Coherence.Generated
 				score = other.score;
 			}
 			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				currentHeat = other.currentHeat;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				speed = other.speed;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				dragConstant = other.dragConstant;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				rotationSpeed = other.rotationSpeed;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				currentRotation = other.currentRotation;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				decayRate = other.decayRate;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				heatBar = other.heatBar;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				currentName = other.currentName;
-			}
-			mask >>= 1;
-			if ((mask & 0x01) != 0)
-			{
-				Frame = other.Frame;
-				enabled = other.enabled;
-			}
-			mask >>= 1;
 			return this;
 		}
 
@@ -128,51 +65,6 @@ namespace Coherence.Generated
 				bitStream.WriteFloat(data.score, FloatMeta.NoCompression());
 			}
 			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteFloat(data.currentHeat, FloatMeta.NoCompression());
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteFloat(data.speed, FloatMeta.NoCompression());
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteFloat(data.dragConstant, FloatMeta.NoCompression());
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteFloat(data.rotationSpeed, FloatMeta.NoCompression());
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteFloat(data.currentRotation, FloatMeta.NoCompression());
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteFloat(data.decayRate, FloatMeta.NoCompression());
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteEntity(data.heatBar);
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteShortString(data.currentName);
-			}
-			mask >>= 1;
-			if (bitStream.WriteMask((mask & 0x01) != 0))
-			{
-				bitStream.WriteBool(data.enabled);
-			}
-			mask >>= 1;
 		}
 
 		public static (Player_id0_PlayerScript_6943692034615545658, uint, uint?) Deserialize(InProtocolBitStream bitStream)
@@ -185,51 +77,6 @@ namespace Coherence.Generated
 				val.score = bitStream.ReadFloat(FloatMeta.NoCompression());
 				mask |= 0b00000000000000000000000000000001;
 			}
-			if (bitStream.ReadMask())
-			{
-				val.currentHeat = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000000010;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.speed = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000000100;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.dragConstant = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000001000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.rotationSpeed = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000010000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.currentRotation = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000100000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.decayRate = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000001000000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.heatBar = bitStream.ReadEntity();
-				mask |= 0b00000000000000000000000010000000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.currentName = bitStream.ReadShortString();
-				mask |= 0b00000000000000000000000100000000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.enabled = bitStream.ReadBool();
-				mask |= 0b00000000000000000000001000000000;
-			}
 			return (val, mask, null);
 		}
 		public static (Player_id0_PlayerScript_6943692034615545658, uint, uint?) DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0(InProtocolBitStream bitStream)
@@ -240,51 +87,6 @@ namespace Coherence.Generated
 			{
 				val.score = bitStream.ReadFloat(FloatMeta.NoCompression());
 				mask |= 0b00000000000000000000000000000001;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.currentHeat = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000000010;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.speed = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000000100;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.dragConstant = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000001000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.rotationSpeed = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000010000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.currentRotation = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000000100000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.decayRate = bitStream.ReadFloat(FloatMeta.NoCompression());
-				mask |= 0b00000000000000000000000001000000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.heatBar = bitStream.ReadEntity();
-				mask |= 0b00000000000000000000000010000000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.currentName = bitStream.ReadShortString();
-				mask |= 0b00000000000000000000000100000000;
-			}
-			if (bitStream.ReadMask())
-			{
-				val.enabled = bitStream.ReadBool();
-				mask |= 0b00000000000000000000001000000000;
 			}
 
 			return (val, mask, 0);

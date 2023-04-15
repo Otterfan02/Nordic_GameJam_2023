@@ -84,7 +84,7 @@ namespace Coherence.Generated
 		}
 	}
 
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_2a34d42f_a321_4329_a1aa_7a636cca5994 : FloatBinding
+	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_8f154625_edb0_4683_99df_09c9936bdb30 : FloatBinding
 	{
 		private PlayerScript CastedUnityComponent;		
 
@@ -112,339 +112,6 @@ namespace Coherence.Generated
 		{
 			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
 			update.score = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_90a7522a_fe83_4c1c_84d7_c2f596dd1070 : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000000000010;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.currentHeat);
-			set => CastedUnityComponent.currentHeat = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.currentHeat;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.currentHeat = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_030c410a_d9ce_4f62_9f6c_30f9b35694fc : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000000000100;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.speed);
-			set => CastedUnityComponent.speed = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.speed;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.speed = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_ed85b47d_be0f_4d09_b821_7993fad650f3 : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000000001000;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.dragConstant);
-			set => CastedUnityComponent.dragConstant = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.dragConstant;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.dragConstant = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_c5f4d9f1_be21_4dbf_a58e_fab34d665b51 : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000000010000;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.rotationSpeed);
-			set => CastedUnityComponent.rotationSpeed = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.rotationSpeed;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.rotationSpeed = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_dd51e32b_1ef8_4386_9a9a_eea594c8f9b6 : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000000100000;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.currentRotation);
-			set => CastedUnityComponent.currentRotation = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.currentRotation;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.currentRotation = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_3e944974_7a5e_4dc1_b4c7_cc929caf0479 : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000001000000;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.decayRate);
-			set => CastedUnityComponent.decayRate = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.decayRate;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.decayRate = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_8d0f824f_39fd_4a55_a77d_603e6b73e59e : ReferenceBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000010000000;
-
-		public override SerializeEntityID Value
-		{
-			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.heatBar);
-			set => CastedUnityComponent.heatBar = coherenceSync.MonoBridge.EntityIdToGameObject(value);
-		}
-
-		protected override SerializeEntityID ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.heatBar;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.heatBar = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_ec56e5c0_b17a_492d_bdc7_e3671d3a6b70 : StringBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000100000000;
-
-		public override string Value
-		{
-			get => (string)(System.String)(CastedUnityComponent.currentName);
-			set => CastedUnityComponent.currentName = (System.String)(value);
-		}
-
-		protected override string ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.currentName;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.currentName = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_4aa26f8c_4dcb_488d_bb09_8b384325eb82 : BoolBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000001000000000;
-
-		public override bool Value
-		{
-			get => (bool)(System.Boolean)(CastedUnityComponent.enabled);
-			set => CastedUnityComponent.enabled = (System.Boolean)(value);
-		}
-
-		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.enabled;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.enabled = Value;
 			return update;
 		}
 
@@ -611,7 +278,8 @@ namespace Coherence.Generated
 		private CoherenceSync coherenceSync;
 		private Logger logger;
 
-		// Cached targets for commands
+		// Cached targets for commands		
+		private PlayerScript Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104_CommandTarget;
 		private InputBuffer<Player> inputBuffer;
 		private Player currentInput;
 		private long lastAddedFrame = -1;
@@ -627,6 +295,16 @@ namespace Coherence.Generated
 			coherenceSync.usingReflection = false;
 
 			logger = coherenceSync.logger.With<CoherenceSyncPlayer_id0>();
+			if (coherenceSync.TryGetBindingByGuid("f1269c51-4f2b-4e79-84a8-5f95b2752104", "kill", out Binding Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104))
+			{
+				Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104_CommandTarget = (PlayerScript)Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104.UnityComponent;
+				coherenceSync.AddCommandRequestDelegate("PlayerScript.kill", "()",
+				SendCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104, ReceiveLocalCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104, MessageTarget.All, Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104_CommandTarget,false);
+			}
+			else
+			{
+				logger.Error("Couldn't find command binding (kill)");
+			}
 			coherenceInput = coherenceSync.Input;
 			inputBuffer = new InputBuffer<Player>(coherenceInput.InitialBufferSize, coherenceInput.InitialBufferDelay, coherenceInput.UseFixedSimulationFrames);
 			if (coherenceSync.TryGetBindingByGuid("cb3d3668-bcf8-4ed6-b786-d4bfab542896", "position", out Binding InternalWorldPosition_Translation_value))
@@ -649,105 +327,15 @@ namespace Coherence.Generated
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).rotation");
 			}
-			if (coherenceSync.TryGetBindingByGuid("2a34d42f-a321-4329-a1aa-7a636cca5994", "score", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score))
+			if (coherenceSync.TryGetBindingByGuid("8f154625-edb0-4683-99df-09c9936bdb30", "score", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score))
 			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_2a34d42f_a321_4329_a1aa_7a636cca5994();
+				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_8f154625_edb0_4683_99df_09c9936bdb30();
 				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score.CloneTo(clone);
 				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score)] = clone;
 			}
 			else
 			{
 				logger.Error("Couldn't find binding (PlayerScript).score");
-			}
-			if (coherenceSync.TryGetBindingByGuid("90a7522a-fe83-4c1c-84d7-c2f596dd1070", "currentHeat", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_90a7522a_fe83_4c1c_84d7_c2f596dd1070();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).currentHeat");
-			}
-			if (coherenceSync.TryGetBindingByGuid("030c410a-d9ce-4f62-9f6c-30f9b35694fc", "speed", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_speed))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_030c410a_d9ce_4f62_9f6c_30f9b35694fc();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_speed.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_speed)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).speed");
-			}
-			if (coherenceSync.TryGetBindingByGuid("ed85b47d-be0f-4d09-b821-7993fad650f3", "dragConstant", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_dragConstant))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_ed85b47d_be0f_4d09_b821_7993fad650f3();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_dragConstant.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_dragConstant)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).dragConstant");
-			}
-			if (coherenceSync.TryGetBindingByGuid("c5f4d9f1-be21-4dbf-a58e-fab34d665b51", "rotationSpeed", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_rotationSpeed))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_c5f4d9f1_be21_4dbf_a58e_fab34d665b51();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_rotationSpeed.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_rotationSpeed)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).rotationSpeed");
-			}
-			if (coherenceSync.TryGetBindingByGuid("dd51e32b-1ef8-4386-9a9a-eea594c8f9b6", "currentRotation", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentRotation))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_dd51e32b_1ef8_4386_9a9a_eea594c8f9b6();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentRotation.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentRotation)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).currentRotation");
-			}
-			if (coherenceSync.TryGetBindingByGuid("3e944974-7a5e-4dc1-b4c7-cc929caf0479", "decayRate", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_decayRate))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_3e944974_7a5e_4dc1_b4c7_cc929caf0479();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_decayRate.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_decayRate)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).decayRate");
-			}
-			if (coherenceSync.TryGetBindingByGuid("8d0f824f-39fd-4a55-a77d-603e6b73e59e", "heatBar", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_heatBar))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_8d0f824f_39fd_4a55_a77d_603e6b73e59e();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_heatBar.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_heatBar)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).heatBar");
-			}
-			if (coherenceSync.TryGetBindingByGuid("ec56e5c0-b17a-492d-bdc7-e3671d3a6b70", "currentName", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentName))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_ec56e5c0_b17a_492d_bdc7_e3671d3a6b70();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentName.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentName)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).currentName");
-			}
-			if (coherenceSync.TryGetBindingByGuid("4aa26f8c-4dcb-488d-bb09-8b384325eb82", "enabled", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_enabled))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_4aa26f8c_4dcb_488d_bb09_8b384325eb82();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_enabled.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_enabled)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).enabled");
 			}
 			if (coherenceSync.TryGetBindingByGuid("06f05b60-8a05-407a-b5bf-bd53eda51408", "text", out Binding InternalPlayer_id0_TMPro__char_46_TextMeshPro_8736711127938106637_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_text))
 			{
@@ -844,11 +432,31 @@ namespace Coherence.Generated
 				sync.MonoBridge.OnLateFixedNetworkUpdate += SendInputState;
 			}
 		}
+		void SendCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104();
+			client.SendCommand(command, target, coherenceSync.EntityID);
+		}
+
+		void ReceiveLocalCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104();
+			ReceiveCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104(command);
+		}
+
+		void ReceiveCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104(Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104 command)
+		{
+			var target = Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104_CommandTarget;
+			target.kill();
+		}
 
 		public override void ReceiveCommand(IEntityCommand command)
 		{
 			switch(command)
 			{
+				case Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104 castedCommand:
+					ReceiveCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104(castedCommand);
+					break;
 				default:
 					logger.Warning($"[CoherenceSyncPlayer_id0] Unhandled command: {command.GetType()}.");
 					break;
