@@ -1,6 +1,18 @@
 component ClientConnection_Client_8466908635430828435
   clientName String [bits "6"]
 
+component Player_id0_PlayerScript_6943692034615545658
+  score Float [compression "None"]
+  currentHeat Float [compression "None"]
+  speed Float [compression "None"]
+  dragConstant Float [compression "None"]
+  rotationSpeed Float [compression "None"]
+  currentRotation Float [compression "None"]
+  decayRate Float [compression "None"]
+  heatBar Entity [bits "20"]
+  currentName String [bits "6"]
+  enabled Bool [bits "1"]
+
 component Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637
   text String [bits "6"]
 
@@ -35,6 +47,17 @@ archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
       value [compression "None"]
     WorldOrientation 
       value [bits "32"]
+    Player_id0_PlayerScript_6943692034615545658 
+      number [compression "None"]
+      number [compression "None"]
+      number [compression "None"]
+      number [compression "None"]
+      number [compression "None"]
+      number [compression "None"]
+      number [compression "None"]
+      value [bits "20"]
+      name [bits "6"]
+      number [bits "1"]
     Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189 
       value [compression "None"]
       number [compression "None"]
