@@ -10,6 +10,8 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     public float speed;
     public float dragConstant;
+    public float rotationSpeed;
+    public float currentRotation;
     
     [Header("Heat")]
     private float maxHeat = 69420;
@@ -60,9 +62,18 @@ public class PlayerScript : MonoBehaviour
             rb.AddForce(Time.deltaTime * speed * -Vector2.left);
 
         }
+        if (Input.GetKey(KeyCode.Q))
+        {
+            currentRotation -= rotationSpeed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            currentRotation += rotationSpeed * Time.deltaTime;
+        }
+        transform.localRotation = Quaternion.Euler(0, 0, currentRotation);
 
-        
-        if(currentHeat > 0 && CheckConnected())
+
+        if (currentHeat > 0 && CheckConnected())
         {
             currentHeat -= decayRate * Time.deltaTime;
         }
