@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Needle
   - Enemy
+  - Syringe
   layers:
   - Default
   - TransparentFX
