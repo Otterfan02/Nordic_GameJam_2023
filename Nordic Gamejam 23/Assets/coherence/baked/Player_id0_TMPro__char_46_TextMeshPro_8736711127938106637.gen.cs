@@ -18,10 +18,56 @@ namespace Coherence.Generated
 	public struct Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637 : ICoherenceComponentData
 	{
 		public string text;
+		public int sortingLayerID;
+		public int sortingOrder;
+		public bool autoSizeTextContainer;
+		public bool isRightToLeftText;
+		public Color color;
+		public float alpha;
+		public bool enableVertexGradient;
+		public bool tintAllSprites;
+		public bool overrideColorTags;
+		public float outlineWidth;
+		public float fontSize;
+		public bool enableAutoSizing;
+		public float fontSizeMin;
+		public float fontSizeMax;
+		public float characterSpacing;
+		public float wordSpacing;
+		public float lineSpacing;
+		public float lineSpacingAdjustment;
+		public float paragraphSpacing;
+		public float characterWidthAdjustment;
+		public bool enableWordWrapping;
+		public float wordWrappingRatios;
+		public bool enableKerning;
+		public bool extraPadding;
+		public bool richText;
+		public bool parseCtrlCharacters;
+		public bool isOverlay;
+		public bool isOrthographic;
+		public bool enableCulling;
+		public bool ignoreVisibility;
+		public float mappingUvLineOffset;
+		public bool isTextObjectScaleStatic;
+		public bool vertexBufferAutoSizeReduction;
+		public int firstVisibleCharacter;
+		public int maxVisibleCharacters;
+		public int maxVisibleWords;
+		public int maxVisibleLines;
+		public bool useMaxVisibleDescender;
+		public int pageToDisplay;
+		public bool havePropertiesChanged;
+		public bool isUsingLegacyAnimationComponent;
+		public bool isVolumetricText;
+		public bool maskable;
+		public bool isMaskingGraphic;
+		public bool raycastTarget;
+		public bool enabled;
 
 		public override string ToString()
 		{
-			return $"Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637(text: {text})";
+			return $"Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637(text: {text}, sortingLayerID: {sortingLayerID}, sortingOrder: {sortingOrder}, autoSizeTextContainer: {autoSizeTextContainer}, isRightToLeftText: {isRightToLeftText}, color: {color}, alpha: {alpha}, enableVertexGradient: {enableVertexGradient}, tintAllSprites: {tintAllSprites}, overrideColorTags: {overrideColorTags}, outlineWidth: {outlineWidth}, fontSize: {fontSize}, enableAutoSizing: {enableAutoSizing}, fontSizeMin: {fontSizeMin}, fontSizeMax: {fontSizeMax}, characterSpacing: {characterSpacing}, wordSpacing: {wordSpacing}, lineSpacing: {lineSpacing}, lineSpacingAdjustment: {lineSpacingAdjustment}, paragraphSpacing: {paragraphSpacing}, characterWidthAdjustment: {characterWidthAdjustment}, enableWordWrapping: {enableWordWrapping}, wordWrappingRatios: {wordWrappingRatios}, enableKerning: {enableKerning}, extraPadding: {extraPadding}, richText: {richText}, parseCtrlCharacters: {parseCtrlCharacters}, isOverlay: {isOverlay}, isOrthographic: {isOrthographic}, enableCulling: {enableCulling}, ignoreVisibility: {ignoreVisibility}, mappingUvLineOffset: {mappingUvLineOffset}, isTextObjectScaleStatic: {isTextObjectScaleStatic}, vertexBufferAutoSizeReduction: {vertexBufferAutoSizeReduction}, firstVisibleCharacter: {firstVisibleCharacter}, maxVisibleCharacters: {maxVisibleCharacters}, maxVisibleWords: {maxVisibleWords}, maxVisibleLines: {maxVisibleLines}, useMaxVisibleDescender: {useMaxVisibleDescender}, pageToDisplay: {pageToDisplay}, havePropertiesChanged: {havePropertiesChanged}, isUsingLegacyAnimationComponent: {isUsingLegacyAnimationComponent}, isVolumetricText: {isVolumetricText}, maskable: {maskable}, isMaskingGraphic: {isMaskingGraphic}, raycastTarget: {raycastTarget}, enabled: {enabled})";
 		}
 
 		public uint GetComponentType() => Definition.InternalPlayer_id0_TMPro__char_46_TextMeshPro_8736711127938106637;
@@ -32,6 +78,20 @@ namespace Coherence.Generated
 
 		public AbsoluteSimulationFrame Frame;
 	
+		private static readonly int _sortingLayerID_Min = -2147483648;
+		private static readonly int _sortingLayerID_Max = 2147483647;
+		private static readonly int _sortingOrder_Min = -2147483648;
+		private static readonly int _sortingOrder_Max = 2147483647;
+		private static readonly int _firstVisibleCharacter_Min = -2147483648;
+		private static readonly int _firstVisibleCharacter_Max = 2147483647;
+		private static readonly int _maxVisibleCharacters_Min = -2147483648;
+		private static readonly int _maxVisibleCharacters_Max = 2147483647;
+		private static readonly int _maxVisibleWords_Min = -2147483648;
+		private static readonly int _maxVisibleWords_Max = 2147483647;
+		private static readonly int _maxVisibleLines_Min = -2147483648;
+		private static readonly int _maxVisibleLines_Max = 2147483647;
+		private static readonly int _pageToDisplay_Min = -2147483648;
+		private static readonly int _pageToDisplay_Max = 2147483647;
 
 		public void SetSimulationFrame(AbsoluteSimulationFrame frame)
 		{
@@ -47,6 +107,282 @@ namespace Coherence.Generated
 			{
 				Frame = other.Frame;
 				text = other.text;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				sortingLayerID = other.sortingLayerID;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				sortingOrder = other.sortingOrder;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				autoSizeTextContainer = other.autoSizeTextContainer;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				isRightToLeftText = other.isRightToLeftText;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				color = other.color;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				alpha = other.alpha;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				enableVertexGradient = other.enableVertexGradient;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				tintAllSprites = other.tintAllSprites;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				overrideColorTags = other.overrideColorTags;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				outlineWidth = other.outlineWidth;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				fontSize = other.fontSize;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				enableAutoSizing = other.enableAutoSizing;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				fontSizeMin = other.fontSizeMin;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				fontSizeMax = other.fontSizeMax;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				characterSpacing = other.characterSpacing;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				wordSpacing = other.wordSpacing;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				lineSpacing = other.lineSpacing;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				lineSpacingAdjustment = other.lineSpacingAdjustment;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				paragraphSpacing = other.paragraphSpacing;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				characterWidthAdjustment = other.characterWidthAdjustment;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				enableWordWrapping = other.enableWordWrapping;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				wordWrappingRatios = other.wordWrappingRatios;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				enableKerning = other.enableKerning;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				extraPadding = other.extraPadding;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				richText = other.richText;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				parseCtrlCharacters = other.parseCtrlCharacters;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				isOverlay = other.isOverlay;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				isOrthographic = other.isOrthographic;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				enableCulling = other.enableCulling;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				ignoreVisibility = other.ignoreVisibility;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				mappingUvLineOffset = other.mappingUvLineOffset;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				isTextObjectScaleStatic = other.isTextObjectScaleStatic;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				vertexBufferAutoSizeReduction = other.vertexBufferAutoSizeReduction;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				firstVisibleCharacter = other.firstVisibleCharacter;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				maxVisibleCharacters = other.maxVisibleCharacters;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				maxVisibleWords = other.maxVisibleWords;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				maxVisibleLines = other.maxVisibleLines;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				useMaxVisibleDescender = other.useMaxVisibleDescender;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				pageToDisplay = other.pageToDisplay;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				havePropertiesChanged = other.havePropertiesChanged;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				isUsingLegacyAnimationComponent = other.isUsingLegacyAnimationComponent;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				isVolumetricText = other.isVolumetricText;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				maskable = other.maskable;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				isMaskingGraphic = other.isMaskingGraphic;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				raycastTarget = other.raycastTarget;
+			}
+			mask >>= 1;
+			if ((mask & 0x01) != 0)
+			{
+				Frame = other.Frame;
+				enabled = other.enabled;
 			}
 			mask >>= 1;
 			return this;
@@ -65,6 +401,250 @@ namespace Coherence.Generated
 				bitStream.WriteShortString(data.text);
 			}
 			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.sortingLayerID, _sortingLayerID_Min, _sortingLayerID_Max, "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637.sortingLayerID");
+				data.sortingLayerID = Coherence.Utils.Bounds.Clamp(data.sortingLayerID, _sortingLayerID_Min, _sortingLayerID_Max);
+				bitStream.WriteIntegerRange(data.sortingLayerID, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.sortingOrder, _sortingOrder_Min, _sortingOrder_Max, "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637.sortingOrder");
+				data.sortingOrder = Coherence.Utils.Bounds.Clamp(data.sortingOrder, _sortingOrder_Min, _sortingOrder_Max);
+				bitStream.WriteIntegerRange(data.sortingOrder, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.autoSizeTextContainer);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.isRightToLeftText);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteColor((data.color.ToCoreColor()), FloatMeta.ForFixedPoint(0, 1, 2.3283064370807973753052522170037E-10));
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.alpha, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.enableVertexGradient);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.tintAllSprites);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.overrideColorTags);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.outlineWidth, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.fontSize, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.enableAutoSizing);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.fontSizeMin, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.fontSizeMax, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.characterSpacing, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.wordSpacing, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.lineSpacing, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.lineSpacingAdjustment, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.paragraphSpacing, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.characterWidthAdjustment, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.enableWordWrapping);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.wordWrappingRatios, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.enableKerning);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.extraPadding);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.richText);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.parseCtrlCharacters);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.isOverlay);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.isOrthographic);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.enableCulling);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.ignoreVisibility);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteFloat(data.mappingUvLineOffset, FloatMeta.NoCompression());
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.isTextObjectScaleStatic);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.vertexBufferAutoSizeReduction);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.firstVisibleCharacter, _firstVisibleCharacter_Min, _firstVisibleCharacter_Max, "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637.firstVisibleCharacter");
+				data.firstVisibleCharacter = Coherence.Utils.Bounds.Clamp(data.firstVisibleCharacter, _firstVisibleCharacter_Min, _firstVisibleCharacter_Max);
+				bitStream.WriteIntegerRange(data.firstVisibleCharacter, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.maxVisibleCharacters, _maxVisibleCharacters_Min, _maxVisibleCharacters_Max, "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637.maxVisibleCharacters");
+				data.maxVisibleCharacters = Coherence.Utils.Bounds.Clamp(data.maxVisibleCharacters, _maxVisibleCharacters_Min, _maxVisibleCharacters_Max);
+				bitStream.WriteIntegerRange(data.maxVisibleCharacters, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.maxVisibleWords, _maxVisibleWords_Min, _maxVisibleWords_Max, "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637.maxVisibleWords");
+				data.maxVisibleWords = Coherence.Utils.Bounds.Clamp(data.maxVisibleWords, _maxVisibleWords_Min, _maxVisibleWords_Max);
+				bitStream.WriteIntegerRange(data.maxVisibleWords, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.maxVisibleLines, _maxVisibleLines_Min, _maxVisibleLines_Max, "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637.maxVisibleLines");
+				data.maxVisibleLines = Coherence.Utils.Bounds.Clamp(data.maxVisibleLines, _maxVisibleLines_Min, _maxVisibleLines_Max);
+				bitStream.WriteIntegerRange(data.maxVisibleLines, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.useMaxVisibleDescender);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				Coherence.Utils.Bounds.Check(data.pageToDisplay, _pageToDisplay_Min, _pageToDisplay_Max, "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637.pageToDisplay");
+				data.pageToDisplay = Coherence.Utils.Bounds.Clamp(data.pageToDisplay, _pageToDisplay_Min, _pageToDisplay_Max);
+				bitStream.WriteIntegerRange(data.pageToDisplay, 32, -2147483648);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.havePropertiesChanged);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.isUsingLegacyAnimationComponent);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.isVolumetricText);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.maskable);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.isMaskingGraphic);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.raycastTarget);
+			}
+			mask >>= 1;
+			if (bitStream.WriteMask((mask & 0x01) != 0))
+			{
+				bitStream.WriteBool(data.enabled);
+			}
+			mask >>= 1;
 		}
 
 		public static (Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637, uint, uint?) Deserialize(InProtocolBitStream bitStream)
@@ -77,6 +657,236 @@ namespace Coherence.Generated
 				val.text = bitStream.ReadShortString();
 				mask |= 0b00000000000000000000000000000001;
 			}
+			if (bitStream.ReadMask())
+			{
+				val.sortingLayerID = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b00000000000000000000000000000010;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.sortingOrder = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b00000000000000000000000000000100;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.autoSizeTextContainer = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000000001000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isRightToLeftText = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000000010000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.color = (bitStream.ReadColor(FloatMeta.ForFixedPoint(0, 1, 2.3283064370807973753052522170037E-10))).ToUnityColor();
+				mask |= 0b00000000000000000000000000100000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.alpha = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000000000001000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableVertexGradient = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000010000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.tintAllSprites = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000100000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.overrideColorTags = bitStream.ReadBool();
+				mask |= 0b00000000000000000000001000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.outlineWidth = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000000010000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.fontSize = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000000100000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableAutoSizing = bitStream.ReadBool();
+				mask |= 0b00000000000000000001000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.fontSizeMin = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000010000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.fontSizeMax = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000100000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.characterSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000001000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.wordSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000010000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.lineSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000100000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.lineSpacingAdjustment = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000001000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.paragraphSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000010000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.characterWidthAdjustment = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000100000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableWordWrapping = bitStream.ReadBool();
+				mask |= 0b00000000001000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.wordWrappingRatios = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000010000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableKerning = bitStream.ReadBool();
+				mask |= 0b00000000100000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.extraPadding = bitStream.ReadBool();
+				mask |= 0b00000001000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.richText = bitStream.ReadBool();
+				mask |= 0b00000010000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.parseCtrlCharacters = bitStream.ReadBool();
+				mask |= 0b00000100000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isOverlay = bitStream.ReadBool();
+				mask |= 0b00001000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isOrthographic = bitStream.ReadBool();
+				mask |= 0b00010000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableCulling = bitStream.ReadBool();
+				mask |= 0b00100000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.ignoreVisibility = bitStream.ReadBool();
+				mask |= 0b01000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.mappingUvLineOffset = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b10000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isTextObjectScaleStatic = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.vertexBufferAutoSizeReduction = bitStream.ReadBool();
+				mask |= 0b1000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.firstVisibleCharacter = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b10000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maxVisibleCharacters = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b100000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maxVisibleWords = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b1000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maxVisibleLines = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b10000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.useMaxVisibleDescender = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.pageToDisplay = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b1000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.havePropertiesChanged = bitStream.ReadBool();
+				mask |= 0b10000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isUsingLegacyAnimationComponent = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isVolumetricText = bitStream.ReadBool();
+				mask |= 0b1000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maskable = bitStream.ReadBool();
+				mask |= 0b10000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isMaskingGraphic = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.raycastTarget = bitStream.ReadBool();
+				mask |= 0b1000000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enabled = bitStream.ReadBool();
+				mask |= 0b10000000000000000000000000000000000000000000000;
+			}
 			return (val, mask, null);
 		}
 		public static (Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637, uint, uint?) DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_LOD0(InProtocolBitStream bitStream)
@@ -87,6 +897,236 @@ namespace Coherence.Generated
 			{
 				val.text = bitStream.ReadShortString();
 				mask |= 0b00000000000000000000000000000001;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.sortingLayerID = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b00000000000000000000000000000010;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.sortingOrder = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b00000000000000000000000000000100;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.autoSizeTextContainer = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000000001000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isRightToLeftText = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000000010000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.color = (bitStream.ReadColor(FloatMeta.ForFixedPoint(0, 1, 2.3283064370807973753052522170037E-10))).ToUnityColor();
+				mask |= 0b00000000000000000000000000100000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.alpha = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000000000001000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableVertexGradient = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000010000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.tintAllSprites = bitStream.ReadBool();
+				mask |= 0b00000000000000000000000100000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.overrideColorTags = bitStream.ReadBool();
+				mask |= 0b00000000000000000000001000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.outlineWidth = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000000010000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.fontSize = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000000100000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableAutoSizing = bitStream.ReadBool();
+				mask |= 0b00000000000000000001000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.fontSizeMin = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000010000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.fontSizeMax = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000000100000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.characterSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000001000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.wordSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000010000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.lineSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000000100000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.lineSpacingAdjustment = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000001000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.paragraphSpacing = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000010000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.characterWidthAdjustment = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000000100000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableWordWrapping = bitStream.ReadBool();
+				mask |= 0b00000000001000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.wordWrappingRatios = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b00000000010000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableKerning = bitStream.ReadBool();
+				mask |= 0b00000000100000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.extraPadding = bitStream.ReadBool();
+				mask |= 0b00000001000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.richText = bitStream.ReadBool();
+				mask |= 0b00000010000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.parseCtrlCharacters = bitStream.ReadBool();
+				mask |= 0b00000100000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isOverlay = bitStream.ReadBool();
+				mask |= 0b00001000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isOrthographic = bitStream.ReadBool();
+				mask |= 0b00010000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enableCulling = bitStream.ReadBool();
+				mask |= 0b00100000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.ignoreVisibility = bitStream.ReadBool();
+				mask |= 0b01000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.mappingUvLineOffset = bitStream.ReadFloat(FloatMeta.NoCompression());
+				mask |= 0b10000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isTextObjectScaleStatic = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.vertexBufferAutoSizeReduction = bitStream.ReadBool();
+				mask |= 0b1000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.firstVisibleCharacter = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b10000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maxVisibleCharacters = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b100000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maxVisibleWords = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b1000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maxVisibleLines = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b10000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.useMaxVisibleDescender = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.pageToDisplay = bitStream.ReadIntegerRange(32, -2147483648);
+				mask |= 0b1000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.havePropertiesChanged = bitStream.ReadBool();
+				mask |= 0b10000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isUsingLegacyAnimationComponent = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isVolumetricText = bitStream.ReadBool();
+				mask |= 0b1000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.maskable = bitStream.ReadBool();
+				mask |= 0b10000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.isMaskingGraphic = bitStream.ReadBool();
+				mask |= 0b100000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.raycastTarget = bitStream.ReadBool();
+				mask |= 0b1000000000000000000000000000000000000000000000;
+			}
+			if (bitStream.ReadMask())
+			{
+				val.enabled = bitStream.ReadBool();
+				mask |= 0b10000000000000000000000000000000000000000000000;
 			}
 
 			return (val, mask, 0);
