@@ -9,6 +9,7 @@ public class SkeletonMovement : MonoBehaviour
     float currentTime;
     int randomDirection;
     private Rigidbody2D rb;
+    [SerializeField] private LayerMask mask;
     Vector2 dir;
     RaycastHit2D hit;
     // Start is called before the first frame update
@@ -24,10 +25,8 @@ public class SkeletonMovement : MonoBehaviour
     void Update()
     {
         Debug.DrawLine(transform.position, new Vector2(transform.position.x + dir.x * 5, transform.position.y + dir.y * 5));
-        if (LookingAtAPlayer()){
-            m_Animator.SetInteger("Direction", (0 + 8));
+        if (LookingAtAPlayer())
             return;
-        }
 
         if (currentTime >= timer) {
             randomDirection = Random.Range(0, 8);
@@ -78,13 +77,12 @@ public class SkeletonMovement : MonoBehaviour
 
     private bool LookingAtAPlayer()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(transform.position.x + dir.x * 5, transform.position.y + dir.y * 5));
-        if (hit.collider.CompareTag("Player"))
-        {
-            m_Animator.SetInteger("Direction", randomDirection + 8);
-            return true;
-        }
-        return false;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(transform.position.x + dir.x, transform.position.y + dir.y), 5, mask);
+        if (hit.collider == null) return false;
+        Debug.Log(hit.collider.tag);
+        randomDirection += 8;
+        m_Animator.SetInteger("Direction", randomDirection);
+        return true;
     }
 
     private void FixedUpdate()

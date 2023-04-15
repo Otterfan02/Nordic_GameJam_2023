@@ -669,7 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8522594283536898458}
   - component: {fileID: 1763148215091912378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Syrenge
   m_TagString: Syringe
   m_Icon: {fileID: 0}
@@ -984,7 +984,7 @@ GameObject:
   - component: {fileID: 338009904285272739}
   - component: {fileID: 4283586294467789668}
   - component: {fileID: 3662277019378573137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerCollider
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 3680152731753887487}
   - component: {fileID: 7980910634865872740}
   - component: {fileID: 1311412609519650549}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Needle
   m_TagString: Needle
   m_Icon: {fileID: 0}

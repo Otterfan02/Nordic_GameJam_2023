@@ -102,6 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335406a5bb9579f4e9e7849c97d6e68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &1058159928911777364
 Animator:
   serializedVersion: 5
@@ -189,7 +192,7 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Skeleton_1a31f1e946b732a47aba5db2fad6053d
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncSkeleton, Assembly-CSharp
   approveAuthorityTransferRequests: 1
