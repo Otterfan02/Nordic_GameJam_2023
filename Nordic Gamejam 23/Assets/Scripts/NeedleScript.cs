@@ -18,7 +18,7 @@ public class NeedleScript : MonoBehaviour
         {
             transform.parent.GetComponent<PlayerScript>().ScoreIncrease(collision.gameObject.GetComponent<PlayerScript>().score);
             transform.parent.GetComponent<PlayerScript>().currentHeat += collision.gameObject.GetComponent<PlayerScript>().currentHeat;
-            collision.gameObject.GetComponent<PlayerScript>().currentHeat = -1;
+            collision.gameObject.GetComponent<PlayerScript>().kill();
 
         }
     }

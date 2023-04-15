@@ -110,6 +110,10 @@ public class PlayerScript : MonoBehaviour
 
         
 }
+    public void kill()
+    {
+        currentHeat = 0;
+    }
     public void ScoreIncrease(float amount)
     {
         score += amount;
