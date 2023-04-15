@@ -1745,9 +1745,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1878746057065597520, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
       propertyPath: bindings.Array.size
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: bindings.Array.data[6]
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
       propertyPath: bindings.Array.data[7]
