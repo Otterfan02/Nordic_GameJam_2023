@@ -2505,8 +2505,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2478798797563887442, guid: 1155d03ea10e86c4b8d8196ccbc3f483, type: 3}
-      propertyPath: m_fontSize
-      value: 15
+      propertyPath: m_margin.z
+      value: -627.10596
       objectReference: {fileID: 0}
     - target: {fileID: 2478798797563887442, guid: 1155d03ea10e86c4b8d8196ccbc3f483, type: 3}
       propertyPath: m_fontSizeBase
