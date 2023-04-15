@@ -20,8 +20,7 @@ public class NeedleScript : MonoBehaviour
             Debug.Log("Added Score");
             transform.parent.GetComponent<PlayerScript>().currentHeat += collision.gameObject.GetComponent<PlayerScript>().currentHeat;
             Debug.Log("Added Heat");
-            collision.gameObject.GetComponent<PlayerScript>().kill();
-            Debug.Log("Did kill");
+
         }
     }
 }

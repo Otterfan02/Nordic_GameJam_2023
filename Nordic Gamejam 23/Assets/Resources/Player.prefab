@@ -212,8 +212,6 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 338009904285272739}
       lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
     - component: {fileID: 2187247328143945527}
       lodStepsActive: 1
     - component: {fileID: 9094340634456951399}
@@ -222,9 +220,11 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: -94541247085822300}
       lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
     - component: {fileID: 1763148215091912378}
+      lodStepsActive: 1
+    - component: {fileID: 4283586294467789668}
+      lodStepsActive: 1
+    - component: {fileID: 0}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -250,6 +250,7 @@ MonoBehaviour:
   - rid: 4120924835208232967
   - rid: 4120924835208233085
   - rid: 4120924835208233132
+  - rid: 4120924853208088738
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -548,6 +549,52 @@ MonoBehaviour:
           rid: -2
         bindingType:
           assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.StringBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 4120924853208088738
+      type: {class: FloatBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 4120924853208088739
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: b20bab02-377c-4834-b6d2-86f061940314
+        archetypeData:
+          type: 4
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 4
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.001
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 6943692034615545658}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 4120924853208088739
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: currentHeat
+        monoAssemblyType: System.Single, mscorlib
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 4
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: PlayerScript, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.FloatBinding,
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []

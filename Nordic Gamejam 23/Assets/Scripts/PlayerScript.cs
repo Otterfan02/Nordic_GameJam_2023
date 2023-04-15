@@ -123,6 +123,14 @@ public class PlayerScript : MonoBehaviour
         if(clientCC != null)
             clientCC.GameObject.GetComponent<Client>().changeScore(score);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+      if (collision.collider.gameObject.CompareTag("Needle"))
+        {
+            kill();
+        }
+
+    }
 
 
 }
