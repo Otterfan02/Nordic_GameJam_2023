@@ -1745,6 +1745,168 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: bindings.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: bindings.Array.data[7]
+      value: 4120924835208233130
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: archetype.boundComponents.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130]
+      value: Coherence.Toolkit Coherence.Toolkit.Bindings.ValueBindings.StringBinding
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131]
+      value: Coherence.Toolkit Coherence.Toolkit.Bindings.Descriptor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].guid
+      value: 03dc5575-ee27-43bf-bafd-fe30b3e96d87
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].name
+      value: text
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].routing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].oldName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].required
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].descriptor
+      value: 4120924835208233131
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].CustomData
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].memberType
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: archetype.boundComponents.Array.data[13].component
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].isPredicted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].coherenceSync
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].unityComponent
+      value: 
+      objectReference: {fileID: 1371977200}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: archetype.boundComponents.Array.data[13].lodStepsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].monoAssemblyType
+      value: System.String, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].interpolationSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].valueSyncCallbackName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.maxRange
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.minRange
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.sampleRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].defaultInterpolationPath
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.sharedBinding
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.floatCompression
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.fields.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].ownerType.assemblyQualifiedName
+      value: TMPro.TextMeshPro, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].bindingType.assemblyQualifiedName
+      value: Coherence.Toolkit.Bindings.ValueBindings.StringBinding, Coherence.Toolkit,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].enforcesLODingWhenFieldsOverriden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].parameterAssemblyTypes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233131].oldParameterAssemblyTypes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.fields.Array.data[0].bits
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.fields.Array.data[0].type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.fields.Array.data[0].maxRange
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.fields.Array.data[0].minRange
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.fields.Array.data[0].precision
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907771036384487958, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
+      propertyPath: managedReferences[4120924835208233130].archetypeData.fields.Array.data[0].floatCompression
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6943692034615545658, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
       propertyPath: nameTag
       value: 
