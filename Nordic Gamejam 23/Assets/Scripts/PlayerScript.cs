@@ -126,6 +126,16 @@ public class PlayerScript : MonoBehaviour
         Debug.Log("Kill2");
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Food"))
+        {
+            currentHeat += 10000;
+            Destroy(collision.gameObject);
+        }
+
+    }
+
 
 
 

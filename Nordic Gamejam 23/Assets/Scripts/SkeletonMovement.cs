@@ -9,7 +9,7 @@ public class SkeletonMovement : MonoBehaviour
     float timer;
     float currentTime;
     public int randomDirection;
-    private float raycastDistance = 2;
+    private float raycastDistance = 4;
     private Rigidbody2D rb;
     public GameObject iceProjectile;
     [SerializeField] private LayerMask mask;
