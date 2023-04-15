@@ -6,8 +6,8 @@ Add player animation
 Add food
 Fix skeleton animation
 Tweak variables to make balance
-Minimap?
-Add max cap for skeleton and food and health
+Minimap - Done
+Add max cap for skeleton and food and health - Missing food, rest Done
 Add scoreboard
 Sprøyte bli udødelig - Done
 Lag emptys for alle dela av player - done
