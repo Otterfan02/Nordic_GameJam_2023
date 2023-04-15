@@ -1,3 +1,7 @@
+component ClientConnection_Client_8466908635430828435
+  clientName String [bits "6"]
+  clientScore Float [compression "None"]
+
 component Player_id0_PlayerScript_6943692034615545658
   score Float [compression "None"]
   currentName String [bits "6"]
@@ -33,6 +37,9 @@ archetype ClientConnection_99b82a7eed3651b419f5350c1e133f4e
   lod 0
     WorldPosition 
       value [compression "None"]
+    ClientConnection_Client_8466908635430828435 
+      name [bits "6"]
+      number [compression "None"]
 
 archetype Dorito_d1aa71088f5cb1e49aa3feffb6bf6aa9
   lod 0
