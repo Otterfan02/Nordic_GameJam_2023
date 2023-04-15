@@ -208,11 +208,15 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 8736711127938106637}
       lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
     - component: {fileID: 8522594283536898458}
       lodStepsActive: 1
     - component: {fileID: 5791432036371585925}
+      lodStepsActive: 1
+    - component: {fileID: 338009904285272739}
+      lodStepsActive: 1
+    - component: {fileID: 3858529466077995134}
+      lodStepsActive: 1
+    - component: {fileID: 0}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -221,7 +225,7 @@ MonoBehaviour:
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncPlayer_id0, Assembly-CSharp
   approveAuthorityTransferRequests: 1
-  simulationType: 3
+  simulationType: 0
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
