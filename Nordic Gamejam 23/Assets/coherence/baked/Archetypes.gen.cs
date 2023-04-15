@@ -10,16 +10,19 @@ namespace Coherence.Generated
 
 	public static class Archetypes
 	{
-		public const int Player_a26d02a2f63fd174f8b2dce76dc412a9Index = 0;
-		public const int SkeleSpawner_381a2c25330358c48abb7579981b3e77Index = 1;
-		public const int Skeleton_1a31f1e946b732a47aba5db2fad6053dIndex = 2;
+		public const int Camera_46cd690149dfe934ebe8093c607e8d63Index = 0;
+		public const int Player_a26d02a2f63fd174f8b2dce76dc412a9Index = 1;
+		public const int SkeleSpawner_381a2c25330358c48abb7579981b3e77Index = 2;
+		public const int Skeleton_1a31f1e946b732a47aba5db2fad6053dIndex = 3;
 
 		public static Dictionary<string, int> IndexForName = new Dictionary<string, int>() {
-			{ "Player_a26d02a2f63fd174f8b2dce76dc412a9", 0 },
+			{ "Camera_46cd690149dfe934ebe8093c607e8d63", 0 },
 
-			{ "SkeleSpawner_381a2c25330358c48abb7579981b3e77", 1 },
+			{ "Player_a26d02a2f63fd174f8b2dce76dc412a9", 1 },
 
-			{ "Skeleton_1a31f1e946b732a47aba5db2fad6053d", 2 },
+			{ "SkeleSpawner_381a2c25330358c48abb7579981b3e77", 2 },
+
+			{ "Skeleton_1a31f1e946b732a47aba5db2fad6053d", 3 },
 
 		};
 	}
