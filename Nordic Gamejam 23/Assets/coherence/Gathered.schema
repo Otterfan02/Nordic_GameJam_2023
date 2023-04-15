@@ -26,6 +26,11 @@ archetype Camera_46cd690149dfe934ebe8093c607e8d63
     WorldPosition 
       value [compression "None"]
 
+archetype Chilli_242515ccaaf002542b0e72e5aa76db60
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+
 archetype ClientConnection_99b82a7eed3651b419f5350c1e133f4e
   lod 0
     WorldPosition 
@@ -33,6 +38,16 @@ archetype ClientConnection_99b82a7eed3651b419f5350c1e133f4e
     ClientConnection_Client_8466908635430828435 
       name [bits "6"]
       number [compression "None"]
+
+archetype Dorito_d1aa71088f5cb1e49aa3feffb6bf6aa9
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+
+archetype FoodSpawner_4148e6cce0669ed41b60f17a32cd07da
+  lod 0
+    WorldPosition 
+      value [compression "None"]
 
 archetype IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810
   lod 0

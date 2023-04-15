@@ -11,27 +11,36 @@ namespace Coherence.Generated
 	public static class Archetypes
 	{
 		public const int Camera_46cd690149dfe934ebe8093c607e8d63Index = 0;
-		public const int ClientConnection_99b82a7eed3651b419f5350c1e133f4eIndex = 1;
-		public const int IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810Index = 2;
-		public const int Player_a26d02a2f63fd174f8b2dce76dc412a9Index = 3;
-		public const int ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483Index = 4;
-		public const int SkeleSpawner_381a2c25330358c48abb7579981b3e77Index = 5;
-		public const int Skeleton_1a31f1e946b732a47aba5db2fad6053dIndex = 6;
+		public const int Chilli_242515ccaaf002542b0e72e5aa76db60Index = 1;
+		public const int ClientConnection_99b82a7eed3651b419f5350c1e133f4eIndex = 2;
+		public const int Dorito_d1aa71088f5cb1e49aa3feffb6bf6aa9Index = 3;
+		public const int FoodSpawner_4148e6cce0669ed41b60f17a32cd07daIndex = 4;
+		public const int IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810Index = 5;
+		public const int Player_a26d02a2f63fd174f8b2dce76dc412a9Index = 6;
+		public const int ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483Index = 7;
+		public const int SkeleSpawner_381a2c25330358c48abb7579981b3e77Index = 8;
+		public const int Skeleton_1a31f1e946b732a47aba5db2fad6053dIndex = 9;
 
 		public static Dictionary<string, int> IndexForName = new Dictionary<string, int>() {
 			{ "Camera_46cd690149dfe934ebe8093c607e8d63", 0 },
 
-			{ "ClientConnection_99b82a7eed3651b419f5350c1e133f4e", 1 },
+			{ "Chilli_242515ccaaf002542b0e72e5aa76db60", 1 },
 
-			{ "IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810", 2 },
+			{ "ClientConnection_99b82a7eed3651b419f5350c1e133f4e", 2 },
 
-			{ "Player_a26d02a2f63fd174f8b2dce76dc412a9", 3 },
+			{ "Dorito_d1aa71088f5cb1e49aa3feffb6bf6aa9", 3 },
 
-			{ "ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483", 4 },
+			{ "FoodSpawner_4148e6cce0669ed41b60f17a32cd07da", 4 },
 
-			{ "SkeleSpawner_381a2c25330358c48abb7579981b3e77", 5 },
+			{ "IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810", 5 },
 
-			{ "Skeleton_1a31f1e946b732a47aba5db2fad6053d", 6 },
+			{ "Player_a26d02a2f63fd174f8b2dce76dc412a9", 6 },
+
+			{ "ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483", 7 },
+
+			{ "SkeleSpawner_381a2c25330358c48abb7579981b3e77", 8 },
+
+			{ "Skeleton_1a31f1e946b732a47aba5db2fad6053d", 9 },
 
 		};
 	}
