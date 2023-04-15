@@ -21,7 +21,7 @@ public class SkeletonSpawnScript : MonoBehaviour
         //Debug.Log(GameObject.FindGameObjectsWithTag("Enemy").Length);
         if (currentDelay > spawnDelay && GameObject.FindGameObjectsWithTag("Enemy").Length < maxSkeletonSpawn)
         {
-            Instantiate(Skeleton, new Vector3((Random.RandomRange(-20, 20)), Random.RandomRange(-20, 20), 0), Quaternion.identity);
+            Instantiate(Skeleton, new Vector3((Random.RandomRange(-40, 40)), Random.RandomRange(-23, 23), 0), Quaternion.identity);
             currentDelay = 0;
         }
         currentDelay += Time.deltaTime;
