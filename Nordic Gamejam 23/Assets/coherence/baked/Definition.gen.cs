@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "33a4b1a65f84008914203d66bc2a3d719d91d6cd";
+		public const string schemaId = "157c9d77e1f5633cd02883c11990398098ceb076";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -128,16 +128,17 @@ namespace Coherence.Generated
 		public const uint InternalArchetypeCamera_46cd690149dfe934ebe8093c607e8d63_WorldPosition_LOD0 = 108;
 		public const uint InternalArchetypeClientConnection_99b82a7eed3651b419f5350c1e133f4e_WorldPosition_LOD0 = 109;
 		public const uint InternalArchetypeClientConnection_99b82a7eed3651b419f5350c1e133f4e_ClientConnection_Client_8466908635430828435_LOD0 = 110;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0 = 111;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldOrientation_LOD0 = 112;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0 = 113;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0 = 114;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0 = 115;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_LOD0 = 116;
-		public const uint InternalArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_WorldPosition_LOD0 = 117;
-		public const uint InternalArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_ScoreBoard_UnityEngine__char_46_RectTransform_6341966924827652843_LOD0 = 118;
-		public const uint InternalArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0 = 119;
-		public const uint InternalArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0 = 120;
+		public const uint InternalArchetypeIceProjectile_e7a2e78b58c6f9c419ed8a30b425d810_WorldPosition_LOD0 = 111;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0 = 112;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldOrientation_LOD0 = 113;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0 = 114;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0 = 115;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0 = 116;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_LOD0 = 117;
+		public const uint InternalArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_WorldPosition_LOD0 = 118;
+		public const uint InternalArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_ScoreBoard_UnityEngine__char_46_RectTransform_6341966924827652843_LOD0 = 119;
+		public const uint InternalArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0 = 120;
+		public const uint InternalArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0 = 121;
 		public const uint InternalAuthorityRequest = 0;
 		public const uint InternalAuthorityTransfer = 1;
 		public const uint InternalQuerySynced = 2;
@@ -259,16 +260,17 @@ namespace Coherence.Generated
 			{ 108, "ArchetypeCamera_46cd690149dfe934ebe8093c607e8d63_WorldPosition_LOD0" },
 			{ 109, "ArchetypeClientConnection_99b82a7eed3651b419f5350c1e133f4e_WorldPosition_LOD0" },
 			{ 110, "ArchetypeClientConnection_99b82a7eed3651b419f5350c1e133f4e_ClientConnection_Client_8466908635430828435_LOD0" },
-			{ 111, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0" },
-			{ 112, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldOrientation_LOD0" },
-			{ 113, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0" },
-			{ 114, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0" },
-			{ 115, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0" },
-			{ 116, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_LOD0" },
-			{ 117, "ArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_WorldPosition_LOD0" },
-			{ 118, "ArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_ScoreBoard_UnityEngine__char_46_RectTransform_6341966924827652843_LOD0" },
-			{ 119, "ArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0" },
-			{ 120, "ArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0" },
+			{ 111, "ArchetypeIceProjectile_e7a2e78b58c6f9c419ed8a30b425d810_WorldPosition_LOD0" },
+			{ 112, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0" },
+			{ 113, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldOrientation_LOD0" },
+			{ 114, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0" },
+			{ 115, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0" },
+			{ 116, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0" },
+			{ 117, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_LOD0" },
+			{ 118, "ArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_WorldPosition_LOD0" },
+			{ 119, "ArchetypeScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483_ScoreBoard_UnityEngine__char_46_RectTransform_6341966924827652843_LOD0" },
+			{ 120, "ArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0" },
+			{ 121, "ArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0" },
 		};
 
 		public static string ComponentNameForTypeId(uint typeId)
@@ -512,6 +514,8 @@ namespace Coherence.Generated
 					return WorldPosition.DeserializeArchetypeClientConnection_99b82a7eed3651b419f5350c1e133f4e_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypeClientConnection_99b82a7eed3651b419f5350c1e133f4e_ClientConnection_Client_8466908635430828435_LOD0:
 					return ClientConnection_Client_8466908635430828435.DeserializeArchetypeClientConnection_99b82a7eed3651b419f5350c1e133f4e_ClientConnection_Client_8466908635430828435_LOD0(inProtocolStream);
+				case InternalArchetypeIceProjectile_e7a2e78b58c6f9c419ed8a30b425d810_WorldPosition_LOD0:
+					return WorldPosition.DeserializeArchetypeIceProjectile_e7a2e78b58c6f9c419ed8a30b425d810_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0:
 					return WorldPosition.DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldOrientation_LOD0:

@@ -12,23 +12,26 @@ namespace Coherence.Generated
 	{
 		public const int Camera_46cd690149dfe934ebe8093c607e8d63Index = 0;
 		public const int ClientConnection_99b82a7eed3651b419f5350c1e133f4eIndex = 1;
-		public const int Player_a26d02a2f63fd174f8b2dce76dc412a9Index = 2;
-		public const int ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483Index = 3;
-		public const int SkeleSpawner_381a2c25330358c48abb7579981b3e77Index = 4;
-		public const int Skeleton_1a31f1e946b732a47aba5db2fad6053dIndex = 5;
+		public const int IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810Index = 2;
+		public const int Player_a26d02a2f63fd174f8b2dce76dc412a9Index = 3;
+		public const int ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483Index = 4;
+		public const int SkeleSpawner_381a2c25330358c48abb7579981b3e77Index = 5;
+		public const int Skeleton_1a31f1e946b732a47aba5db2fad6053dIndex = 6;
 
 		public static Dictionary<string, int> IndexForName = new Dictionary<string, int>() {
 			{ "Camera_46cd690149dfe934ebe8093c607e8d63", 0 },
 
 			{ "ClientConnection_99b82a7eed3651b419f5350c1e133f4e", 1 },
 
-			{ "Player_a26d02a2f63fd174f8b2dce76dc412a9", 2 },
+			{ "IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810", 2 },
 
-			{ "ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483", 3 },
+			{ "Player_a26d02a2f63fd174f8b2dce76dc412a9", 3 },
 
-			{ "SkeleSpawner_381a2c25330358c48abb7579981b3e77", 4 },
+			{ "ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483", 4 },
 
-			{ "Skeleton_1a31f1e946b732a47aba5db2fad6053d", 5 },
+			{ "SkeleSpawner_381a2c25330358c48abb7579981b3e77", 5 },
+
+			{ "Skeleton_1a31f1e946b732a47aba5db2fad6053d", 6 },
 
 		};
 	}
