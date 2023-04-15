@@ -6,7 +6,7 @@ using UnityEngine;
 public class IceProjectile : MonoBehaviour
 {
     private Vector2 dir;
-    private float speed = 2f;
+    private float speed = 0.02f;
 
     public void GetDir(Vector2 skeletonDir)
     {
@@ -14,6 +14,6 @@ public class IceProjectile : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.position = new Vector2(transform.position.x + dir.x, transform.position.y + dir.y);
+        transform.position = new Vector2(transform.position.x + dir.x * speed, transform.position.y + dir.y * speed);
     }
 }

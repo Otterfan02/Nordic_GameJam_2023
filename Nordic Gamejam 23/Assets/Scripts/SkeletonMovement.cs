@@ -108,7 +108,7 @@ public class SkeletonMovement : MonoBehaviour
 
     public void SpawnProjectile()
     {
-        GameObject projectile = Instantiate(iceProjectile,transform.position,transform.rotation,transform);
+        GameObject projectile = Instantiate(iceProjectile,transform.position,transform.rotation);
         projectile.GetComponent<IceProjectile>().GetDir(dir);
     }
 }
