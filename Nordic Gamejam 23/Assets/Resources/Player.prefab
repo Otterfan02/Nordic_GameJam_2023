@@ -320,6 +320,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 6255893198823531576}
       lodStepsActive: 1
+    - component: {fileID: 7980910634865872740}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player_a26d02a2f63fd174f8b2dce76dc412a9
@@ -791,6 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3680152731753887487}
   - component: {fileID: 6255893198823531576}
+  - component: {fileID: 7980910634865872740}
   m_Layer: 0
   m_Name: Needle
   m_TagString: Needle
@@ -842,3 +845,15 @@ PolygonCollider2D:
       - {x: 0.031308047, y: 0.7082252}
       - {x: 0.03104225, y: 0.58288634}
       - {x: 0.0621287, y: 0.58333594}
+--- !u!114 &7980910634865872740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758424028262613644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955dca464f455394db6f316c696aab68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 1058159928911777361}
   - component: {fileID: 1058159928911777364}
   - component: {fileID: 1155530079439522202}
+  - component: {fileID: 4346855509740277965}
+  - component: {fileID: 1415961595186599754}
   m_Layer: 0
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,6 +177,10 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 1058159928911777364}
       lodStepsActive: 1
+    - component: {fileID: 4346855509740277965}
+      lodStepsActive: 1
+    - component: {fileID: 1415961595186599754}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Skeleton_1a31f1e946b732a47aba5db2fad6053d
@@ -260,3 +266,66 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
+--- !u!60 &4346855509740277965
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058159928911777360}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.12121725, y: 0.47537947}
+      - {x: -0.16785479, y: 0.36837053}
+      - {x: -0.16686201, y: 0.232615}
+      - {x: -0.070994854, y: 0.092814684}
+      - {x: -0.033598423, y: -0.066358805}
+      - {x: -0.17045927, y: -0.09319019}
+      - {x: -0.19720888, y: -0.29669762}
+      - {x: -0.3125, y: -0.5}
+      - {x: 0.28125, y: -0.5}
+      - {x: 0.16122532, y: -0.3090644}
+      - {x: 0.15548658, y: -0.101922035}
+      - {x: 0.044487, y: -0.08209324}
+      - {x: 0.048728943, y: 0.08024192}
+      - {x: 0.0946517, y: 0.11960077}
+      - {x: 0.107069016, y: 0.15348506}
+      - {x: 0.16122484, y: 0.24242163}
+      - {x: 0.17211246, y: 0.4599917}
+--- !u!50 &1415961595186599754
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058159928911777360}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

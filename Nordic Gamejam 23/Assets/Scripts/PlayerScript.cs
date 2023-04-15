@@ -74,7 +74,7 @@ public class PlayerScript : MonoBehaviour
             currentHeat = maxHeat;
         }
 
-        Debug.Log(currentHeat);
+        //Debug.Log(currentHeat);
 
         if (!CheckConnected())
         {

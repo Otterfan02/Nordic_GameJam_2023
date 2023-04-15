@@ -20,6 +20,9 @@ public class SkeletonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
         if (currentTime >= timer) {
             randomDirection = Random.Range(0, 8);
             timer = Random.Range(1, 5);
@@ -69,4 +72,5 @@ public class SkeletonMovement : MonoBehaviour
     {
         transform.position += new Vector3(dir.x * Time.deltaTime,dir.y * Time.deltaTime, transform.position.z);
     }
+
 }
