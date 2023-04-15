@@ -81,7 +81,8 @@ public class PlayerScript : MonoBehaviour
             currentHeat = maxHeat;
             score = 0;
         }
-        
+
+
 
         heatBar.gameObject.transform.localScale = new Vector3(currentHeat/maxHeat, heatBar.gameObject.transform.localScale.y, heatBar.gameObject.transform.localScale.z);
 
