@@ -17,9 +17,11 @@ public class NeedleScript : MonoBehaviour
         } else if (collision.collider.gameObject.CompareTag("Player"))
         {
             transform.parent.GetComponent<PlayerScript>().ScoreIncrease(collision.gameObject.GetComponent<PlayerScript>().score);
+            Debug.Log("Added Score");
             transform.parent.GetComponent<PlayerScript>().currentHeat += collision.gameObject.GetComponent<PlayerScript>().currentHeat;
+            Debug.Log("Added Heat");
             collision.gameObject.GetComponent<PlayerScript>().kill();
-
+            Debug.Log("Did kill");
         }
     }
 }

@@ -112,7 +112,9 @@ public class PlayerScript : MonoBehaviour
 }
     public void kill()
     {
-        currentHeat = 0;
+        Debug.Log("Kill1");
+        currentHeat = -10000;
+        Debug.Log("Kill2");
     }
     public void ScoreIncrease(float amount)
     {

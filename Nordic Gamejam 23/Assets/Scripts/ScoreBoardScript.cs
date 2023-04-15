@@ -21,7 +21,7 @@ public class ScoreBoardScript : MonoBehaviour
 
     private void ClientConnections_OnSynced(CoherenceClientConnectionManager obj = null)
     {
-        Debug.Log("Test");
+        //Debug.Log("Test");
         nameList = new ArrayList();
         scoreList = new ArrayList();
         clientList = bridge.ClientConnections.GetAll();
@@ -30,7 +30,7 @@ public class ScoreBoardScript : MonoBehaviour
 
             nameList.Add((clientConection.GameObject.GetComponent<Client>().clientName));
             scoreList.Add(clientConection.GameObject.GetComponent<Client>().clientScore);
-            Debug.Log(scoreList[0]);
+            //Debug.Log(scoreList[0]);
         }
     }
     private void Update()
