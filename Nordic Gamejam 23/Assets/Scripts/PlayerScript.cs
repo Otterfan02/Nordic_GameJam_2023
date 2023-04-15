@@ -49,24 +49,8 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            rb.AddForce(Time.deltaTime * speed * Vector2.up);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            rb.AddForce(Time.deltaTime * -speed * Vector2.up);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb.AddForce(Time.deltaTime * speed * Vector2.left);
+        rb.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed;
 
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb.AddForce(Time.deltaTime * speed * -Vector2.left);
-
-        }
         if (Input.GetKey(KeyCode.Q))
         {
             currentRotation -= rotationSpeed * Time.deltaTime;
@@ -126,13 +110,7 @@ public class PlayerScript : MonoBehaviour
 
         
 }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.transform.tag == "Needle")
-        {
-            currentHeat = -1;
-        }
-    }
+
 
 
 }
