@@ -96,7 +96,7 @@ public class PlayerScript : MonoBehaviour
 
         scoreText.text = "Score: " + Mathf.Round(score);
 
-        score += Time.deltaTime;
+        ScoreIncrease(Time.deltaTime);
 
 
     bool CheckConnected()
@@ -110,7 +110,13 @@ public class PlayerScript : MonoBehaviour
 
         
 }
-
+    public void ScoreIncrease(float amount)
+    {
+        score += amount;
+        CoherenceClientConnection clientCC = bridge.ClientConnections.GetMine();
+        if(clientCC != null)
+            clientCC.GameObject.GetComponent<Client>().changeScore(score);
+    }
 
 
 }
