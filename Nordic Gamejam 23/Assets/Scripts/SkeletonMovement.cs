@@ -11,6 +11,7 @@ public class SkeletonMovement : MonoBehaviour
     public int randomDirection;
     private float raycastDistance = 2;
     private Rigidbody2D rb;
+    public GameObject iceProjectile;
     [SerializeField] private LayerMask mask;
     Vector2 dir;
     RaycastHit2D hit;
@@ -103,5 +104,11 @@ public class SkeletonMovement : MonoBehaviour
     private void AnimatorController(int currentAnimation)
     {
         m_Animator.SetInteger("Direction", currentAnimation);
+    }
+
+    public void SpawnProjectile()
+    {
+        GameObject projectile = Instantiate(iceProjectile,transform.position,transform.rotation,transform);
+        projectile.GetComponent<IceProjectile>().GetDir(dir);
     }
 }

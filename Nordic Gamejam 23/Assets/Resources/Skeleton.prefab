@@ -102,6 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335406a5bb9579f4e9e7849c97d6e68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomDirection: 0
+  iceProjectile: {fileID: 6235519499143587652, guid: e7a2e78b58c6f9c419ed8a30b425d810, type: 3}
   mask:
     serializedVersion: 2
     m_Bits: 64
