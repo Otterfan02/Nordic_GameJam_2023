@@ -22,7 +22,7 @@ public class FoodSpawner : MonoBehaviour
         //Debug.Log(GameObject.FindGameObjectsWithTag("Enemy").Length);
         if (currentDelay > spawnDelay && GameObject.FindGameObjectsWithTag("Food").Length < maxFoodSpawn)
         {
-            if(Random.Range(0,1) > 0.5f)
+            if(Random.Range(0,2) > 0.5f)
             {
                 Instantiate(chilli, new Vector3((Random.Range(-40, 40)), Random.Range(-23, 23), 0), Quaternion.identity);
                 currentDelay = 0;
