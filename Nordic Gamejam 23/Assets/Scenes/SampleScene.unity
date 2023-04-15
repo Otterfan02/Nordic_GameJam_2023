@@ -1654,10 +1654,6 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1691284946}
-    - target: {fileID: 6943692034615545658, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
-      propertyPath: rotationSpeed
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7908877644098621075, guid: a26d02a2f63fd174f8b2dce76dc412a9, type: 3}
       propertyPath: m_RootOrder
       value: 1
