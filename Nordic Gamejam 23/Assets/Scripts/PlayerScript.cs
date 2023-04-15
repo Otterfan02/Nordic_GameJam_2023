@@ -127,18 +127,12 @@ public class PlayerScript : MonoBehaviour
     {
       if (collision.collider.gameObject.CompareTag("Needle"))
         {
-
-            StartCoroutine(sleepy());
+            kill();
         }
 
     }
 
-    IEnumerator sleepy()
-    {
-        yield return new WaitForSeconds(0.1f);
-        kill();
 
-    }
 
 
 }
