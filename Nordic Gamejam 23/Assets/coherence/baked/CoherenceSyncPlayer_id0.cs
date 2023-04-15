@@ -280,11 +280,6 @@ namespace Coherence.Generated
 
 		// Cached targets for commands		
 		private PlayerScript Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104_CommandTarget;
-		private InputBuffer<Player> inputBuffer;
-		private Player currentInput;
-		private long lastAddedFrame = -1;
-		private CoherenceInput coherenceInput;
-		private long currentSimulationFrame => coherenceInput.CurrentSimulationFrame;
 
 		private IClient client;
 		private CoherenceMonoBridge monoBridge => coherenceSync.MonoBridge;
@@ -305,8 +300,6 @@ namespace Coherence.Generated
 			{
 				logger.Error("Couldn't find command binding (kill)");
 			}
-			coherenceInput = coherenceSync.Input;
-			inputBuffer = new InputBuffer<Player>(coherenceInput.InitialBufferSize, coherenceInput.InitialBufferDelay, coherenceInput.UseFixedSimulationFrames);
 			if (coherenceSync.TryGetBindingByGuid("cb3d3668-bcf8-4ed6-b786-d4bfab542896", "position", out Binding InternalWorldPosition_Translation_value))
 			{
 				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_cb3d3668_bcf8_4ed6_b786_d4bfab542896();
@@ -400,13 +393,6 @@ namespace Coherence.Generated
 
 			return null;
 		}
-		private void OnDestroy()
-		{
-			if (monoBridge != null)
-			{
-				monoBridge.OnLateFixedNetworkUpdate -= SendInputState;
-			}
-		}
 
 		public override void Initialize(CoherenceSync sync, IClient client)
 		{
@@ -415,22 +401,6 @@ namespace Coherence.Generated
 				coherenceSync = sync;
 			}
 			this.client = client;
-			sync.Input.internalSetButtonState = SetButtonState;
-			sync.Input.internalSetButtonRangeState = SetButtonRangeState;
-			sync.Input.internalSetAxisState = SetAxisState;
-			sync.Input.internalSetStringState = SetStringState;
-			sync.Input.internalGetButtonState = GetButtonState;
-			sync.Input.internalGetButtonRangeState = GetButtonRangeState;
-			sync.Input.internalGetAxisState = GetAxisState;
-			sync.Input.internalGetStringState = GetStringState;
-			sync.Input.internalRequestBuffer = () => inputBuffer;
-			sync.Input.internalOnInputReceived += OnInput;
-			sync.Input.internalRequestBuffer = () => inputBuffer;
-
-			if (coherenceInput.UseFixedSimulationFrames)
-			{
-				sync.MonoBridge.OnLateFixedNetworkUpdate += SendInputState;
-			}
 		}
 		void SendCommand_Player_id0_PlayerScript__char_46_kill_f1269c51_4f2b_4e79_84a8_5f95b2752104(MessageTarget target, object[] args)
 		{
@@ -461,134 +431,6 @@ namespace Coherence.Generated
 					logger.Warning($"[CoherenceSyncPlayer_id0] Unhandled command: {command.GetType()}.");
 					break;
 			}
-		}
-
-		private void SetButtonState(string name, bool value)
-		{
-			switch(name)
-			{
-				default:
-					logger.Error($"No input button of name: {name}");
-					break;
-			}
-		}
-
-		private void SetButtonRangeState(string name, float value)
-		{
-			switch(name)
-			{
-			default:
-				logger.Error($"No input button range of name: {name}");
-				break;
-			}
-		}
-
-		private void SetAxisState(string name, Vector2 value)
-		{
-			switch(name)
-			{
-			default:
-				logger.Error($"No input axis of name: {name}");
-				break;
-			}
-		}
-
-		private void SetStringState(string name, string value)
-		{
-			switch(name)
-			{
-				default:
-					logger.Error($"No input button of name: {name}");
-					break;
-			}
-		}
-
-		public override void SendInputState()
-		{
-			if (!coherenceInput.IsProducer || !coherenceInput.IsReadyToProcessInputs || !coherenceInput.IsInputOwner)
-			{
-				return;
-			}
-
-			if (lastAddedFrame != currentSimulationFrame)
-			{
-				inputBuffer.AddInput(currentInput, currentSimulationFrame);
-				lastAddedFrame = currentSimulationFrame;
-			}
-
-			while (inputBuffer.DequeueForSending(currentSimulationFrame, out long frameToSend, out Player input, out bool differs))
-			{
-				coherenceInput.DebugOnInputSent(frameToSend, input);
-				client.SendInput(input, frameToSend, coherenceSync.EntityID);
-			}
-		}
-
-		private bool ShouldPollCurrentInput(long frame)
-		{
-			return coherenceInput.IsProducer && coherenceInput.Delay == 0 && frame == currentSimulationFrame;
-		}
-
-		private bool GetButtonState(string name, long? simulationFrame)
-		{
-			long frame = simulationFrame.GetValueOrDefault(currentSimulationFrame);
-
-			switch(name)
-			{
-				default:
-					logger.Error($"No input button of name: {name}");
-					break;
-			}
-
-			return false;
-		}
-
-		private float GetButtonRangeState(string name, long? simulationFrame)
-		{
-			long frame = simulationFrame.GetValueOrDefault(currentSimulationFrame);
-
-			switch(name)
-			{
-			default:
-				logger.Error($"No input button range of name: {name}");
-				break;
-			}
-
-			return 0f;
-		}
-
-		private Vector2 GetAxisState(string name, long? simulationFrame)
-		{
-			long frame = simulationFrame.GetValueOrDefault(currentSimulationFrame);
-
-			switch(name)
-			{
-			default:
-				logger.Error($"No input axis of name: {name}");
-				break;
-			}
-
-			return Vector2.zero;
-		}
-
-		private string GetStringState(string name, long? simulationFrame)
-		{
-			long frame = simulationFrame.GetValueOrDefault(currentSimulationFrame);
-
-			switch(name)
-			{
-				default:
-					logger.Error($"No input button of name: {name}");
-					break;
-			}
-
-			return null;
-		}
-
-		private void OnInput(IEntityInput entityInput, long frame)
-		{
-			var input = (Player)entityInput;
-			coherenceInput.DebugOnInputReceived(frame, entityInput);
-			inputBuffer.ReceiveInput(input, frame);
 		}
 	}
 }

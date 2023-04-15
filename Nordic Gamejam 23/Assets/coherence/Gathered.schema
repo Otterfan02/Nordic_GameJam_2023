@@ -67,5 +67,3 @@ archetype Skeleton_1a31f1e946b732a47aba5db2fad6053d
     WorldPosition 
       value [compression "None"]
 
-input Player
-

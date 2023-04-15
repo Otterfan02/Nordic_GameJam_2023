@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6943692034615545658}
   - component: {fileID: 9221523111977080189}
   - component: {fileID: 6907771036384487958}
-  - component: {fileID: 1560225894978080470}
   - component: {fileID: -94541247085822300}
   m_Layer: 0
   m_Name: Player
@@ -641,25 +640,6 @@ MonoBehaviour:
             Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
---- !u!114 &1560225894978080470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878746057065597520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitialBufferSize: 32
-  InitialBufferDelay: 3
-  DisconnectOnTimeReset: 0
-  DestroyOnInputAuthorityDisconnected: 1
-  UseFixedSimulationFrames: 0
-  inputName: Player
-  fields: []
 --- !u!95 &-94541247085822300
 Animator:
   serializedVersion: 5
