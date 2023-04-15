@@ -18,6 +18,8 @@ archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
   lod 0
     WorldPosition 
       value [compression "None"]
+    WorldOrientation 
+      value [bits "32"]
     Player_id0_PlayerScript_6943692034615545658 
       number [compression "None"]
       number [compression "None"]

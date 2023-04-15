@@ -53,6 +53,37 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_2123fbd0_5434_4d95_abe7_36d4b8f3c48c : RotationBinding
+	{
+		public override string CoherenceComponentName => "WorldOrientation";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override Quaternion Value
+		{
+			get => (Quaternion)(UnityEngine.Quaternion)(coherenceSync.coherenceRotation);
+			set => coherenceSync.coherenceRotation = (UnityEngine.Quaternion)(value);
+		}
+
+		protected override Quaternion ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (WorldOrientation)coherenceComponent;
+			return update.value;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (WorldOrientation)coherenceComponent;
+			update.value = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new WorldOrientation();
+		}
+	}
+
 	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_50ca12a8_ee0c_438e_af08_c3e195235967 : FloatBinding
 	{
 		private PlayerScript CastedUnityComponent;		
@@ -274,6 +305,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).position");
+			}
+			if (coherenceSync.TryGetBindingByGuid("2123fbd0-5434-4d95-abe7-36d4b8f3c48c", "rotation", out Binding InternalWorldOrientation_Rotation_value))
+			{
+				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_2123fbd0_5434_4d95_abe7_36d4b8f3c48c();
+				InternalWorldOrientation_Rotation_value.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalWorldOrientation_Rotation_value)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.Transform).rotation");
 			}
 			if (coherenceSync.TryGetBindingByGuid("50ca12a8-ee0c-438e-af08-c3e195235967", "currentHeat", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat))
 			{

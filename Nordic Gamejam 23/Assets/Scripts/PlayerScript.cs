@@ -1,4 +1,5 @@
 using Coherence.Toolkit;
+using Coherence.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -29,6 +30,7 @@ public class PlayerScript : MonoBehaviour
 
     [Header("Div")]
     private Vector2 StartPos;
+    public TMP_Text nameTag;
 
 
 
@@ -39,6 +41,8 @@ public class PlayerScript : MonoBehaviour
         currentHeat = maxHeat;
         isConnected = false;
         StartPos = transform.position;
+
+
     }
 
     // Update is called once per frame
@@ -85,6 +89,8 @@ public class PlayerScript : MonoBehaviour
             currentHeat = maxHeat;
         }
 
+ 
+
         //Debug.Log(currentHeat);
 
         if (!CheckConnected())
@@ -92,6 +98,9 @@ public class PlayerScript : MonoBehaviour
             currentHeat = maxHeat;
             score = 0;
         }
+
+        nameTag.SetText(NetworkDialog.PlayerName);
+        Debug.Log(NetworkDialog.PlayerName);
 
 
 
