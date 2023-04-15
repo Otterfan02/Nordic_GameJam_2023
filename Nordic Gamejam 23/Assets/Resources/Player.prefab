@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2000
   dragConstant: 0.98
-  rotationSpeed: -500
+  rotationSpeed: -200
   currentRotation: 0
   currentHeat: 0
   decayRate: 1000
