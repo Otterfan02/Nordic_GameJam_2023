@@ -31,6 +31,7 @@ public class PlayerScript : MonoBehaviour
     [Header("Div")]
     private Vector2 StartPos;
     public TMP_Text nameTag;
+    public string currentName;
 
 
 
@@ -99,7 +100,8 @@ public class PlayerScript : MonoBehaviour
             score = 0;
         }
 
-        nameTag.SetText(NetworkDialog.PlayerName);
+        currentName = NetworkDialog.PlayerName;
+        nameTag.SetText(currentName);
         Debug.Log(NetworkDialog.PlayerName);
 
 

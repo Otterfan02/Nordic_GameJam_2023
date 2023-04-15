@@ -84,80 +84,6 @@ namespace Coherence.Generated
 		}
 	}
 
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_50ca12a8_ee0c_438e_af08_c3e195235967 : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000000000001;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.currentHeat);
-			set => CastedUnityComponent.currentHeat = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.currentHeat;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.currentHeat = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
-	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_40c11705_0906_4e79_8c09_15f33251cdc7 : FloatBinding
-	{
-		private PlayerScript CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (PlayerScript)UnityComponent;
-		}
-		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
-
-		public override uint FieldMask => 0b00000000000000000000000000000010;
-
-		public override float Value
-		{
-			get => (float)(System.Single)(CastedUnityComponent.score);
-			set => CastedUnityComponent.score = (System.Single)(value);
-		}
-
-		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			return update.score;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
-			update.score = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new Player_id0_PlayerScript_6943692034615545658();
-		}
-	}
-
 	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_06f05b60_8a05_407a_b5bf_bd53eda51408 : StringBinding
 	{
 		private TMPro.TextMeshPro CastedUnityComponent;		
@@ -352,26 +278,6 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).rotation");
-			}
-			if (coherenceSync.TryGetBindingByGuid("50ca12a8-ee0c-438e-af08-c3e195235967", "currentHeat", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_50ca12a8_ee0c_438e_af08_c3e195235967();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).currentHeat");
-			}
-			if (coherenceSync.TryGetBindingByGuid("40c11705-0906-4e79-8c09-15f33251cdc7", "score", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score))
-			{
-				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_40c11705_0906_4e79_8c09_15f33251cdc7();
-				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (PlayerScript).score");
 			}
 			if (coherenceSync.TryGetBindingByGuid("06f05b60-8a05-407a-b5bf-bd53eda51408", "text", out Binding InternalPlayer_id0_TMPro__char_46_TextMeshPro_8736711127938106637_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_text))
 			{
