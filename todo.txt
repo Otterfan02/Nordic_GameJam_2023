@@ -1,0 +1,13 @@
+Make skeleton cone tracing
+Make skeleton shoot
+Make better woll
+Fix touching tips make big
+Add player animation
+Add food
+Fix skeleton animation
+Tweak variables to make balance
+Minimap?
+Add max cap for skeleton and food and health
+Add scoreboard
+Sprøyte bli udødelig
+Lag emptys for alle dela av player
