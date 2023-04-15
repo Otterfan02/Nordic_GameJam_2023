@@ -312,8 +312,8 @@ MonoBehaviour:
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 0
-  coherenceUUID: 
+  uniquenessType: 1
+  coherenceUUID: ScoreBoard
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []
@@ -333,7 +333,7 @@ MonoBehaviour:
       m_Calls: []
   remoteVersionPrefabName: ScoreBoard
   PrefabGuid: 1155d03ea10e86c4b8d8196ccbc3f483
-  selectedSynchronizedPrefabOption: 3
+  selectedSynchronizedPrefabOption: 0
   usingReflection: 0
   coherenceTag: 
   componentActions: []
@@ -487,3 +487,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bridge: {fileID: 0}
+  scoreBoardText: {fileID: 0}
