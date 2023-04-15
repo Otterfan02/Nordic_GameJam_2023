@@ -1,3 +1,6 @@
+component ClientConnection_Client_8466908635430828435
+  clientName String [bits "6"]
+
 component Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637
   text String [bits "6"]
 
@@ -8,10 +11,23 @@ component Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189
 component Player_id0_UnityEngine__char_46_Transform_7700443003500183079
   localScale Vector3 [compression "None"]
 
+component ScoreBoard_UnityEngine__char_46_RectTransform_6341966924827652843
+  position Vector3 [compression "None"]
+
+command ScoreBoard_ScoreBoardScript__char_46_reBuildList_bd5d9a95_c3e9_4c8d_9736_02bde17cffd0 [routing "All"]
+
 archetype Camera_46cd690149dfe934ebe8093c607e8d63
   lod 0
     WorldPosition 
       value [compression "None"]
+
+archetype ClientConnection_99b82a7eed3651b419f5350c1e133f4e
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+    ClientConnection_Client_8466908635430828435 
+      name [bits "6"]
+      number [compression "None"]
 
 archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
   lod 0
@@ -26,6 +42,13 @@ archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
       value [compression "None"]
     Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637 
       name [bits "6"]
+
+archetype ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+    ScoreBoard_UnityEngine__char_46_RectTransform_6341966924827652843 
+      value [compression "None"]
 
 archetype SkeleSpawner_381a2c25330358c48abb7579981b3e77
   lod 0
