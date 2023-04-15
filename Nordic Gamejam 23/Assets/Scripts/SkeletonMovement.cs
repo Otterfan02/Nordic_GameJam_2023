@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 
 public class SkeletonMovement : MonoBehaviour
@@ -7,7 +8,8 @@ public class SkeletonMovement : MonoBehaviour
     private Animator m_Animator;
     float timer;
     float currentTime;
-    int randomDirection;
+    public int randomDirection;
+    private float raycastDistance = 2;
     private Rigidbody2D rb;
     [SerializeField] private LayerMask mask;
     Vector2 dir;
@@ -24,9 +26,11 @@ public class SkeletonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawLine(transform.position, new Vector2(transform.position.x + dir.x * 5, transform.position.y + dir.y * 5));
         if (LookingAtAPlayer())
+        {
+            AnimatorController(randomDirection+8);
             return;
+        }
 
         if (currentTime >= timer) {
             randomDirection = Random.Range(0, 8);
@@ -42,46 +46,48 @@ public class SkeletonMovement : MonoBehaviour
         {
             case 0:
                dir = new Vector2(0, 1);
-                m_Animator.SetInteger("Direction", 0);
+                AnimatorController(0);
                 break;
             case 1:
                 dir = new Vector2(1, 0);
-                m_Animator.SetInteger("Direction", 1);
+                AnimatorController(1);
                 break;
             case 2:
                 dir = new Vector2(1, 1);
-                m_Animator.SetInteger("Direction", 2);
+                AnimatorController(2);
                 break;
             case 3:
                 dir = new Vector2(-1, 0);
-                m_Animator.SetInteger("Direction", 3);
+                AnimatorController(3);
                 break;
             case 4:
                 dir = new Vector2(0, -1);
-                m_Animator.SetInteger("Direction", 4);
+                AnimatorController(4);
                 break;
             case 5:
                 dir = new Vector2(-1, 1);
-                m_Animator.SetInteger("Direction", 5);
+                AnimatorController(5);
                 break;
             case 6:
                 dir = new Vector2(1, -1);
-                m_Animator.SetInteger("Direction", 6);
+                AnimatorController(6);
                 break;
             case 7:
                 dir = new Vector2(-1, -1);
-                m_Animator.SetInteger("Direction", 7);
+                AnimatorController(7);
                 break;
         }
     }
 
     private bool LookingAtAPlayer()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(transform.position.x + dir.x, transform.position.y + dir.y), 5, mask);
-        if (hit.collider == null) return false;
+        Debug.DrawRay(transform.position, dir * raycastDistance);
+        int currentDir = randomDirection;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, raycastDistance, mask);
+        if (hit.collider == null)
+            return false;
+
         Debug.Log(hit.collider.tag);
-        randomDirection += 8;
-        m_Animator.SetInteger("Direction", randomDirection);
         return true;
     }
 
@@ -93,4 +99,9 @@ public class SkeletonMovement : MonoBehaviour
         transform.position += new Vector3(dir.x * Time.deltaTime,dir.y * Time.deltaTime, transform.position.z);
     }
 
+
+    private void AnimatorController(int currentAnimation)
+    {
+        m_Animator.SetInteger("Direction", currentAnimation);
+    }
 }
