@@ -10,7 +10,7 @@ public class NeedleScript : MonoBehaviour
         Debug.Log(collision.transform.tag);
         if(collision.transform.tag == "Enemy")
         {
-            Debug.Log("Kill");
+            //Debug.Log("Kill");
             transform.parent.GetComponent<PlayerScript>().score += 69;
             transform.parent.GetComponent<PlayerScript>().currentHeat += 6900;
             Destroy(collision.gameObject);
