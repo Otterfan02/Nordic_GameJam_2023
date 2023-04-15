@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9221523111977080189}
   - component: {fileID: 6907771036384487958}
   - component: {fileID: 1560225894978080470}
+  - component: {fileID: -94541247085822300}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -199,8 +200,6 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 3680152731753887487}
       lodStepsActive: 1
-    - component: {fileID: 0}
-      lodStepsActive: 1
     - component: {fileID: 7980910634865872740}
       lodStepsActive: 1
     - component: {fileID: 2976234019802990004}
@@ -221,7 +220,9 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 9094340634456951399}
       lodStepsActive: 1
-    - component: {fileID: 0}
+    - component: {fileID: 1311412609519650549}
+      lodStepsActive: 1
+    - component: {fileID: -94541247085822300}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -567,6 +568,27 @@ MonoBehaviour:
   UseFixedSimulationFrames: 0
   inputName: Player
   fields: []
+--- !u!95 &-94541247085822300
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878746057065597520}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8fa334847b7764c43b992d80a49cfb6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1930709825567189240
 GameObject:
   m_ObjectHideFlags: 0
