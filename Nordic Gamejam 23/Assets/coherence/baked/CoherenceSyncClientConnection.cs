@@ -53,43 +53,6 @@ namespace Coherence.Generated
 		}
 	}
 
-	public class Binding_99b82a7eed3651b419f5350c1e133f4e_6c018670_1cbe_41d3_b18e_0c4f59e48d5f : StringBinding
-	{
-		private Client CastedUnityComponent;		
-
-		protected override void OnBindingCloned()
-		{
-			CastedUnityComponent = (Client)UnityComponent;
-		}
-		public override string CoherenceComponentName => "ClientConnection_Client_8466908635430828435";
-
-		public override uint FieldMask => 0b00000000000000000000000000000001;
-
-		public override string Value
-		{
-			get => (string)(System.String)(CastedUnityComponent.clientName);
-			set => CastedUnityComponent.clientName = (System.String)(value);
-		}
-
-		protected override string ReadComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (ClientConnection_Client_8466908635430828435)coherenceComponent;
-			return update.clientName;
-		}
-		
-		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
-		{
-			var update = (ClientConnection_Client_8466908635430828435)coherenceComponent;
-			update.clientName = Value;
-			return update;
-		}
-
-		public override ICoherenceComponentData CreateComponentData()
-		{
-			return new ClientConnection_Client_8466908635430828435();
-		}
-	}
-
 
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'ClientConnection' (auto assigned)")]
@@ -119,16 +82,6 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).position");
-			}
-			if (coherenceSync.TryGetBindingByGuid("6c018670-1cbe-41d3-b18e-0c4f59e48d5f", "clientName", out Binding InternalClientConnection_Client_8466908635430828435_ClientConnection_Client_8466908635430828435_clientName))
-			{
-				var clone = new Binding_99b82a7eed3651b419f5350c1e133f4e_6c018670_1cbe_41d3_b18e_0c4f59e48d5f();
-				InternalClientConnection_Client_8466908635430828435_ClientConnection_Client_8466908635430828435_clientName.CloneTo(clone);
-				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalClientConnection_Client_8466908635430828435_ClientConnection_Client_8466908635430828435_clientName)] = clone;
-			}
-			else
-			{
-				logger.Error("Couldn't find binding (Client).clientName");
 			}
 		}
 
