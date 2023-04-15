@@ -1073,6 +1073,7 @@ GameObject:
   - component: {fileID: 3680152731753887487}
   - component: {fileID: 6255893198823531576}
   - component: {fileID: 7980910634865872740}
+  - component: {fileID: 965610182247203668}
   m_Layer: 0
   m_Name: Needle
   m_TagString: Needle
@@ -1136,3 +1137,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955dca464f455394db6f316c696aab68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &965610182247203668
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758424028262613644}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
