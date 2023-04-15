@@ -208,6 +208,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 8736711127938106637}
       lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player_a26d02a2f63fd174f8b2dce76dc412a9
@@ -233,6 +235,7 @@ MonoBehaviour:
   - rid: 4120924835208233042
   - rid: 4120924835208233044
   - rid: 4120924835208233085
+  - rid: 4120924835208233132
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -577,6 +580,52 @@ MonoBehaviour:
           rid: -2
         bindingType:
           assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.RotationBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 4120924835208233132
+      type: {class: StringBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 4120924835208233133
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 06f05b60-8a05-407a-b5bf-bd53eda51408
+        archetypeData:
+          type: 5
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 5
+            bits: 6
+            minRange: 0
+            maxRange: 0
+            precision: 0
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 8736711127938106637}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 4120924835208233133
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: text
+        monoAssemblyType: System.String, mscorlib
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 16
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: TMPro.TextMeshPro, Unity.TextMeshPro, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.StringBinding,
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []

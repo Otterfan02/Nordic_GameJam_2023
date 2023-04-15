@@ -2,6 +2,9 @@ component Player_id0_PlayerScript_6943692034615545658
   currentHeat Float [compression "None"]
   score Float [compression "None"]
 
+component Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637
+  text String [bits "6"]
+
 component Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189
   velocity Vector2 [compression "None"]
   gravityScale Float [compression "None"]
@@ -28,6 +31,8 @@ archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
       number [compression "None"]
     Player_id0_UnityEngine__char_46_Transform_7700443003500183079 
       value [compression "None"]
+    Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637 
+      name [bits "6"]
 
 archetype SkeleSpawner_381a2c25330358c48abb7579981b3e77
   lod 0

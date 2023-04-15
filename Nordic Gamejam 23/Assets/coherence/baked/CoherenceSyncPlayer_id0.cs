@@ -158,6 +158,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_06f05b60_8a05_407a_b5bf_bd53eda51408 : StringBinding
+	{
+		private TMPro.TextMeshPro CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (TMPro.TextMeshPro)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override string Value
+		{
+			get => (string)(System.String)(CastedUnityComponent.text);
+			set => CastedUnityComponent.text = (System.String)(value);
+		}
+
+		protected override string ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637)coherenceComponent;
+			return update.text;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637)coherenceComponent;
+			update.text = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637();
+		}
+	}
+
 	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_210a7214_5506_4986_bf42_cba07389c73b : Vector2Binding
 	{
 		private UnityEngine.Rigidbody2D CastedUnityComponent;		
@@ -335,6 +372,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (PlayerScript).score");
+			}
+			if (coherenceSync.TryGetBindingByGuid("06f05b60-8a05-407a-b5bf-bd53eda51408", "text", out Binding InternalPlayer_id0_TMPro__char_46_TextMeshPro_8736711127938106637_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_text))
+			{
+				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_06f05b60_8a05_407a_b5bf_bd53eda51408();
+				InternalPlayer_id0_TMPro__char_46_TextMeshPro_8736711127938106637_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_text.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_TMPro__char_46_TextMeshPro_8736711127938106637_Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637_text)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (TMPro.TextMeshPro).text");
 			}
 			if (coherenceSync.TryGetBindingByGuid("210a7214-5506-4986-bf42-cba07389c73b", "velocity", out Binding InternalPlayer_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_velocity))
 			{
