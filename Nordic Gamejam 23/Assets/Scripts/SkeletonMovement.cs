@@ -8,10 +8,13 @@ public class SkeletonMovement : MonoBehaviour
     float timer;
     float currentTime;
     int randomDirection;
+    private Rigidbody2D rb;
     Vector2 dir;
+    RaycastHit2D hit;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         m_Animator= GetComponent<Animator>();
         timer = Random.Range(1, 5);
         randomDirection = Random.Range(0, 8);
@@ -20,8 +23,11 @@ public class SkeletonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
+        Debug.DrawLine(transform.position, new Vector2(transform.position.x + dir.x * 5, transform.position.y + dir.y * 5));
+        if (LookingAtAPlayer()){
+            m_Animator.SetInteger("Direction", (0 + 8));
+            return;
+        }
 
         if (currentTime >= timer) {
             randomDirection = Random.Range(0, 8);
@@ -29,6 +35,8 @@ public class SkeletonMovement : MonoBehaviour
             currentTime = 0;
         }
         currentTime += Time.deltaTime;
+
+
 
 
         switch (randomDirection)
@@ -68,8 +76,22 @@ public class SkeletonMovement : MonoBehaviour
         }
     }
 
+    private bool LookingAtAPlayer()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(transform.position.x + dir.x * 5, transform.position.y + dir.y * 5));
+        if (hit.collider.CompareTag("Player"))
+        {
+            m_Animator.SetInteger("Direction", randomDirection + 8);
+            return true;
+        }
+        return false;
+    }
+
     private void FixedUpdate()
     {
+        if (LookingAtAPlayer())
+            return;
+
         transform.position += new Vector3(dir.x * Time.deltaTime,dir.y * Time.deltaTime, transform.position.z);
     }
 
