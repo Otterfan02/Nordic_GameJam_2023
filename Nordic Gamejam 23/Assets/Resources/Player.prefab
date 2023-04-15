@@ -216,7 +216,7 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 3858529466077995134}
       lodStepsActive: 1
-    - component: {fileID: 0}
+    - component: {fileID: 965610182247203668}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
