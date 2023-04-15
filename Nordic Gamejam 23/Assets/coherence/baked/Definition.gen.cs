@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "675505a9c223d83164689640388ee66516d31851";
+		public const string schemaId = "af20e179d1607a4125a2935cc7d758a23d2eac45";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -119,13 +119,15 @@ namespace Coherence.Generated
 		public const uint InternalGenericFieldULong3 = 99;
 		public const uint InternalGenericFieldColor0 = 100;
 		public const uint InternalGenericFieldColor1 = 101;
-		public const uint InternalPlayer_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189 = 102;
-		public const uint InternalPlayer_id0_UnityEngine__char_46_Transform_7700443003500183079 = 103;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0 = 104;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0 = 105;
-		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0 = 106;
-		public const uint InternalArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0 = 107;
-		public const uint InternalArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0 = 108;
+		public const uint InternalPlayer_id0_PlayerScript_6943692034615545658 = 102;
+		public const uint InternalPlayer_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189 = 103;
+		public const uint InternalPlayer_id0_UnityEngine__char_46_Transform_7700443003500183079 = 104;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0 = 105;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0 = 106;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0 = 107;
+		public const uint InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0 = 108;
+		public const uint InternalArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0 = 109;
+		public const uint InternalArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0 = 110;
 		public const uint InternalAuthorityRequest = 0;
 		public const uint InternalAuthorityTransfer = 1;
 		public const uint InternalQuerySynced = 2;
@@ -236,13 +238,15 @@ namespace Coherence.Generated
 			{ 99, "GenericFieldULong3" },
 			{ 100, "GenericFieldColor0" },
 			{ 101, "GenericFieldColor1" },
-			{ 102, "Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189" },
-			{ 103, "Player_id0_UnityEngine__char_46_Transform_7700443003500183079" },
-			{ 104, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0" },
-			{ 105, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0" },
-			{ 106, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0" },
-			{ 107, "ArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0" },
-			{ 108, "ArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0" },
+			{ 102, "Player_id0_PlayerScript_6943692034615545658" },
+			{ 103, "Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189" },
+			{ 104, "Player_id0_UnityEngine__char_46_Transform_7700443003500183079" },
+			{ 105, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0" },
+			{ 106, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0" },
+			{ 107, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0" },
+			{ 108, "ArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0" },
+			{ 109, "ArchetypeSkeleSpawner_381a2c25330358c48abb7579981b3e77_WorldPosition_LOD0" },
+			{ 110, "ArchetypeSkeleton_1a31f1e946b732a47aba5db2fad6053d_WorldPosition_LOD0" },
 		};
 
 		public static string ComponentNameForTypeId(uint typeId)
@@ -468,12 +472,16 @@ namespace Coherence.Generated
 					return GenericFieldColor0.Deserialize(inProtocolStream);
 				case InternalGenericFieldColor1:
 					return GenericFieldColor1.Deserialize(inProtocolStream);
+				case InternalPlayer_id0_PlayerScript_6943692034615545658:
+					return Player_id0_PlayerScript_6943692034615545658.Deserialize(inProtocolStream);
 				case InternalPlayer_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189:
 					return Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189.Deserialize(inProtocolStream);
 				case InternalPlayer_id0_UnityEngine__char_46_Transform_7700443003500183079:
 					return Player_id0_UnityEngine__char_46_Transform_7700443003500183079.Deserialize(inProtocolStream);
 				case InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0:
 					return WorldPosition.DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_WorldPosition_LOD0(inProtocolStream);
+				case InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0:
+					return Player_id0_PlayerScript_6943692034615545658.DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_PlayerScript_6943692034615545658_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0:
 					return Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189.DeserializeArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_a26d02a2f63fd174f8b2dce76dc412a9_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_LOD0:
@@ -797,6 +805,9 @@ namespace Coherence.Generated
 					break;
 				case InternalGenericFieldColor1:
 					GenericFieldColor1.Serialize((GenericFieldColor1)data, mask, protocolStream);
+					break;
+				case InternalPlayer_id0_PlayerScript_6943692034615545658:
+					Player_id0_PlayerScript_6943692034615545658.Serialize((Player_id0_PlayerScript_6943692034615545658)data, mask, protocolStream);
 					break;
 				case InternalPlayer_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189:
 					Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189.Serialize((Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189)data, mask, protocolStream);

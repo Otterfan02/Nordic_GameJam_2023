@@ -53,6 +53,80 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_50ca12a8_ee0c_438e_af08_c3e195235967 : FloatBinding
+	{
+		private PlayerScript CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (PlayerScript)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override float Value
+		{
+			get => (float)(System.Single)(CastedUnityComponent.currentHeat);
+			set => CastedUnityComponent.currentHeat = (System.Single)(value);
+		}
+
+		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
+			return update.currentHeat;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
+			update.currentHeat = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_PlayerScript_6943692034615545658();
+		}
+	}
+
+	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_40c11705_0906_4e79_8c09_15f33251cdc7 : FloatBinding
+	{
+		private PlayerScript CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (PlayerScript)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_PlayerScript_6943692034615545658";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override float Value
+		{
+			get => (float)(System.Single)(CastedUnityComponent.score);
+			set => CastedUnityComponent.score = (System.Single)(value);
+		}
+
+		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
+			return update.score;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_PlayerScript_6943692034615545658)coherenceComponent;
+			update.score = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_PlayerScript_6943692034615545658();
+		}
+	}
+
 	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_210a7214_5506_4986_bf42_cba07389c73b : Vector2Binding
 	{
 		private UnityEngine.Rigidbody2D CastedUnityComponent;		
@@ -193,6 +267,26 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).position");
+			}
+			if (coherenceSync.TryGetBindingByGuid("50ca12a8-ee0c-438e-af08-c3e195235967", "currentHeat", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat))
+			{
+				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_50ca12a8_ee0c_438e_af08_c3e195235967();
+				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_currentHeat)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (PlayerScript).currentHeat");
+			}
+			if (coherenceSync.TryGetBindingByGuid("40c11705-0906-4e79-8c09-15f33251cdc7", "score", out Binding InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score))
+			{
+				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_40c11705_0906_4e79_8c09_15f33251cdc7();
+				InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_PlayerScript_6943692034615545658_Player_id0_PlayerScript_6943692034615545658_score)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (PlayerScript).score");
 			}
 			if (coherenceSync.TryGetBindingByGuid("210a7214-5506-4986-bf42-cba07389c73b", "velocity", out Binding InternalPlayer_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_Player_id0_UnityEngine__char_46_Rigidbody2D_9221523111977080189_velocity))
 			{

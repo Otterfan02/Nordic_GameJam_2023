@@ -13,7 +13,7 @@ public class PlayerScript : MonoBehaviour
     
     [Header("Heat")]
     private float maxHeat = 69420;
-    private float currentHeat;
+    public float currentHeat;
     public float decayRate;
     public GameObject heatBar;
     
@@ -23,7 +23,7 @@ public class PlayerScript : MonoBehaviour
 
     [Header("Score")]
     public TMP_Text scoreText;
-    private float score;
+    public float score;
 
     [Header("Div")]
     private Vector2 StartPos;
