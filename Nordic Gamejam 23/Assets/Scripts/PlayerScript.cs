@@ -85,7 +85,7 @@ public class PlayerScript : MonoBehaviour
         }
 
         currentName = NetworkDialog.PlayerName;
-        nameTag.SetText(currentName);
+        nameTag.text = currentName;
         //Debug.Log(NetworkDialog.PlayerName);
 
 
