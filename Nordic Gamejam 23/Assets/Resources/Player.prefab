@@ -224,6 +224,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: -94541247085822300}
       lodStepsActive: 1
+    - component: {fileID: 0}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player_a26d02a2f63fd174f8b2dce76dc412a9

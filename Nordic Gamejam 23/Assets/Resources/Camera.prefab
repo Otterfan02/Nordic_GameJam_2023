@@ -180,7 +180,7 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: Camera_46cd690149dfe934ebe8093c607e8d63
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncCamera, Assembly-CSharp
   approveAuthorityTransferRequests: 1
@@ -213,6 +213,7 @@ MonoBehaviour:
   componentActions:
   - rid: 4120924835208233078
   - rid: 4120924835208233163
+  - rid: 4120924853208088731
   references:
     version: 2
     RefIds:
@@ -272,6 +273,10 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 9211769283502923499}
+    - rid: 4120924853208088731
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 9177149611440621051}
 --- !u!114 &9177149611440621051
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -42,12 +42,13 @@ public class ScoreBoardScript : MonoBehaviour
             foreach (var user in nameList)
             {
                 scoreBoardText.text += nameList[i] + " " + Mathf.Round((float)scoreList[i]) + "\n";
+                i++;
 
             }
         }
         catch
         {
-            Debug.Log("Not joined yet");
+            return;
         }
     }
 
