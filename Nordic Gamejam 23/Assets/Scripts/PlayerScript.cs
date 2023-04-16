@@ -140,7 +140,7 @@ public class PlayerScript : MonoBehaviour
         if (collision.CompareTag("Projectile"))
         {
             currentHeat -= 10000;
-            Destroy(collision.gameObject);
+            DestroyBullet(collision.gameObject);
         }
     }
 
@@ -158,6 +158,11 @@ public class PlayerScript : MonoBehaviour
                 animator.SetInteger("Player", 0);
                 break;
         }
+    }
+
+    private void DestroyBullet(GameObject bullet)
+    {
+        bullet.GetComponent<Animator>().SetInteger("Hit",1);
     }
 
 

@@ -9,6 +9,14 @@ public class IceProjectile : MonoBehaviour
     private float speed = 0.02f;
     [SerializeField] private float timer;
     private float currentTime;
+    private BoxCollider2D col;
+    private Animator animator;
+
+    private void Start()
+    {
+        col= GetComponent<BoxCollider2D>();
+        animator= GetComponent<Animator>();
+    }
 
     public void GetDir(Vector2 skeletonDir)
     {
@@ -23,8 +31,18 @@ public class IceProjectile : MonoBehaviour
     {
         if (currentTime >= timer)
         {
-            Destroy(gameObject);
+            animator.SetInteger("Hit",1);
         }
         currentTime += Time.deltaTime;
+    }
+
+    public void DisableBoxCollider()
+    {
+        col.enabled = false;
+    }
+
+    public void DestroyBullet()
+    {
+        Destroy(gameObject);
     }
 }
