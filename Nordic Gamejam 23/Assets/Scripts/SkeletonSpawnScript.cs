@@ -25,6 +25,5 @@ public class SkeletonSpawnScript : MonoBehaviour
             currentDelay = 0;
         }
         currentDelay += Time.deltaTime;
-
     }
 }

@@ -8,12 +8,13 @@ public class SkeletonMovement : MonoBehaviour
     float timer;
     float currentTime;
     public int randomDirection;
-    private float raycastDistance = 4;
+    [SerializeField] private float raycastDistance = 4;
     private Rigidbody2D rb;
     public GameObject iceProjectile;
     [SerializeField] private LayerMask mask;
     Vector2 dir;
     RaycastHit2D hit;
+    [SerializeField] private bool isShooting;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,9 @@ public class SkeletonMovement : MonoBehaviour
             AnimatorController(randomDirection+8);
             return;
         }
+
+        if (isShooting)
+            return;
 
         if (currentTime >= timer) {
             randomDirection = Random.Range(0, 8);
@@ -83,7 +87,7 @@ public class SkeletonMovement : MonoBehaviour
     {
         Debug.DrawRay(transform.position, dir * raycastDistance);
         int currentDir = randomDirection;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, raycastDistance, mask);
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(2,2), 0, dir, raycastDistance, mask);
         if (hit.collider == null)
             return false;
 
@@ -94,6 +98,8 @@ public class SkeletonMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if (LookingAtAPlayer())
+            return;
+        if (isShooting)
             return;
 
         transform.position += new Vector3(dir.x * Time.deltaTime,dir.y * Time.deltaTime, transform.position.z);
@@ -109,5 +115,16 @@ public class SkeletonMovement : MonoBehaviour
     {
         GameObject projectile = Instantiate(iceProjectile,transform.position,transform.rotation);
         projectile.GetComponent<IceProjectile>().GetDir(dir);
+        isShooting = false;
+    }
+
+    public void IsShootingTrue()
+    {
+        isShooting = true;
+    }
+
+    public void IsShootingFalse()
+    {
+        isShooting = false;
     }
 }

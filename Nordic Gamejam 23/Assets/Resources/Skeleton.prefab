@@ -103,10 +103,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomDirection: 0
+  raycastDistance: 20
   iceProjectile: {fileID: 6235519499143587652, guid: e7a2e78b58c6f9c419ed8a30b425d810, type: 3}
   mask:
     serializedVersion: 2
     m_Bits: 64
+  isShooting: 0
 --- !u!95 &1058159928911777364
 Animator:
   serializedVersion: 5

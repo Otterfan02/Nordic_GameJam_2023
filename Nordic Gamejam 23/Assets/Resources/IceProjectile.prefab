@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f48359c0964f5d449c3c1730a3da733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 5
+  timer: 20
 --- !u!114 &2897066952149689191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: IceProjectile_e7a2e78b58c6f9c419ed8a30b425d810
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncIceProjectile, Assembly-CSharp
   approveAuthorityTransferRequests: 1
