@@ -195,6 +195,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_6f77536b_160b_46ef_ac6e_7d7a21003f65 : IntAnimatorParameterBinding
+	{
+		private UnityEngine.Animator CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.Animator)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_Animator__94541247085822300";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override int Value
+		{
+			get => (int)(CastedUnityComponent.GetInteger(CastedDescriptor.ParameterHash));
+			set => CastedUnityComponent.SetInteger(CastedDescriptor.ParameterHash, (value));
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Animator__94541247085822300)coherenceComponent;
+			return update.Player;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Animator__94541247085822300)coherenceComponent;
+			update.Player = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_Animator__94541247085822300();
+		}
+	}
+
 	public class Binding_a26d02a2f63fd174f8b2dce76dc412a9_b3e7df05_2474_4f41_9985_f1a6df58df0e : DeepScaleBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -312,6 +349,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (TMPro.TextMeshPro).text");
+			}
+			if (coherenceSync.TryGetBindingByGuid("6f77536b-160b-46ef-ac6e-7d7a21003f65", "Player", out Binding InternalPlayer_id0_UnityEngine__char_46_Animator__94541247085822300_Player_id0_UnityEngine__char_46_Animator__94541247085822300_Player))
+			{
+				var clone = new Binding_a26d02a2f63fd174f8b2dce76dc412a9_6f77536b_160b_46ef_ac6e_7d7a21003f65();
+				InternalPlayer_id0_UnityEngine__char_46_Animator__94541247085822300_Player_id0_UnityEngine__char_46_Animator__94541247085822300_Player.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_Animator__94541247085822300_Player_id0_UnityEngine__char_46_Animator__94541247085822300_Player)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.Animator).Player");
 			}
 			if (coherenceSync.TryGetBindingByGuid("b3e7df05-2474-4f41-9985-f1a6df58df0e", "localScale", out Binding InternalPlayer_id0_UnityEngine__char_46_Transform_7700443003500183079_Player_id0_UnityEngine__char_46_Transform_7700443003500183079_localScale))
 			{

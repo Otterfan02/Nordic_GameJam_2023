@@ -9,6 +9,9 @@ component Player_id0_PlayerScript_6943692034615545658
 component Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637
   text String [bits "6"]
 
+component Player_id0_UnityEngine__char_46_Animator__94541247085822300
+  Player Int [bits "32", range-min "-2147483648", range-max "2147483647"]
+
 component Player_id0_UnityEngine__char_46_Transform_7700443003500183079
   localScale Vector3 [compression "None"]
 
@@ -65,6 +68,8 @@ archetype Player_a26d02a2f63fd174f8b2dce76dc412a9
       value [compression "None"]
     Player_id0_TMPro__char_46_TextMeshPro_8736711127938106637 
       name [bits "6"]
+    Player_id0_UnityEngine__char_46_Animator__94541247085822300 
+      number [bits "32", range-min "-2147483648", range-max "2147483647"]
 
 archetype ScoreBoard_1155d03ea10e86c4b8d8196ccbc3f483
   lod 0
