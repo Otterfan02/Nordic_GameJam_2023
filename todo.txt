@@ -14,5 +14,5 @@ Lag emptys for alle dela av player - done
 Add exit - DONE
 Lyd(etter jam)
 Hvem lod oss koge?
-Custom Skins based på navn
-Reworke Skjellet
+Custom Skins based på navn - Done
+Reworke Skjellet - Done
