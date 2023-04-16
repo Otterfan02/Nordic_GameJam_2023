@@ -70,7 +70,7 @@ public class PlayerScript : MonoBehaviour
         if(currentHeat <= 0)
         {
             score = 0;
-            transform.position = StartPos + new Vector2(Random.RandomRange(-20, 20), Random.RandomRange(-20, 20));
+            transform.position = StartPos + new Vector2(Random.Range(-20, 20), Random.Range(-20, 20));
             currentHeat = maxHeat;
         }
 
