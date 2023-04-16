@@ -50,6 +50,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed;
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
 
         if (Input.GetKey(KeyCode.Q))
         {

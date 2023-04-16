@@ -1,13 +1,18 @@
-Make skeleton cone tracing
-Make skeleton shoot
+Make skeleton cone tracing - Done
+Make skeleton shoot - Done
 Make better woll - Done
 Fix touching tips make big - done
 Add player animation - Done
-Add food
+Add food - Done
 Fix skeleton animation - Done
 Tweak variables to make balance - Done
 Minimap - Done
-Add max cap for skeleton and food and health - Missing food, rest Done
+Add max cap for skeleton and food and health - Done
 Add scoreboard - Done
 Sprøyte bli udødelig - Done
 Lag emptys for alle dela av player - done
+Add exit - DONE
+Lyd(etter jam)
+Hvem lod oss koge?
+Custom Skins based på navn
+Reworke Skjellet
