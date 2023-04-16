@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1058159928911777364}
   - component: {fileID: 1155530079439522202}
   - component: {fileID: 4346855509740277965}
-  - component: {fileID: 1415961595186599754}
+  - component: {fileID: 4995661837764506690}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
@@ -187,11 +187,11 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 4346855509740277965}
       lodStepsActive: 1
-    - component: {fileID: 1415961595186599754}
-      lodStepsActive: 1
     - component: {fileID: 2299437166221254960}
       lodStepsActive: 1
     - component: {fileID: 3506457160915431085}
+      lodStepsActive: 1
+    - component: {fileID: 4995661837764506690}
       lodStepsActive: 1
     lodLevels:
     - distance: 0
@@ -320,7 +320,7 @@ PolygonCollider2D:
       - {x: 0.107069016, y: 0.15348506}
       - {x: 0.16122484, y: 0.24242163}
       - {x: 0.17211246, y: 0.4599917}
---- !u!50 &1415961595186599754
+--- !u!50 &4995661837764506690
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0

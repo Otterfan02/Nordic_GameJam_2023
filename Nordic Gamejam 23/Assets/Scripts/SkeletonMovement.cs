@@ -32,6 +32,8 @@ public class SkeletonMovement : MonoBehaviour
             AnimatorController(randomDirection+8);
             return;
         }
+        else
+        AnimatorController(randomDirection);
 
         if (isShooting)
             return;
@@ -87,7 +89,7 @@ public class SkeletonMovement : MonoBehaviour
     {
         Debug.DrawRay(transform.position, dir * raycastDistance);
         int currentDir = randomDirection;
-        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(2,2), 0, dir, raycastDistance, mask);
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(0.5f,0.5f), 0, dir, raycastDistance, mask);
         if (hit.collider == null)
             return false;
 
@@ -115,7 +117,6 @@ public class SkeletonMovement : MonoBehaviour
     {
         GameObject projectile = Instantiate(iceProjectile,transform.position,transform.rotation);
         projectile.GetComponent<IceProjectile>().GetDir(dir);
-        isShooting = false;
     }
 
     public void IsShootingTrue()
