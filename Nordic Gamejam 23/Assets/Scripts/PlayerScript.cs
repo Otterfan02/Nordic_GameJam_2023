@@ -32,6 +32,7 @@ public class PlayerScript : MonoBehaviour
     private Vector2 StartPos;
     public TMP_Text nameTag;
     public string currentName;
+    private Animator animator;
 
 
 
@@ -42,13 +43,14 @@ public class PlayerScript : MonoBehaviour
         currentHeat = maxHeat;
         isConnected = false;
         StartPos = transform.position;
-
-
+        animator= GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        ChangeSkin();
+
         rb.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed;
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
 
@@ -139,6 +141,22 @@ public class PlayerScript : MonoBehaviour
         {
             currentHeat -= 10000;
             Destroy(collision.gameObject);
+        }
+    }
+
+    private void ChangeSkin()
+    {
+        switch (currentName) {
+
+            case "Huferu":
+                animator.SetInteger("Player", 1);
+                break;
+            case "Otter":
+                animator.SetInteger("Player", 2);
+                break;
+            default:
+                animator.SetInteger("Player", 0);
+                break;
         }
     }
 
